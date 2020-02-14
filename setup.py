@@ -11,12 +11,12 @@ import pathlib
 import setuptools
 from setuptools.command.build_py import build_py
 
-NAME = 'reforis_schnapps'
+NAME = 'reforis_snapshots'
 
 BASE_DIR = pathlib.Path(__file__).absolute().parent
 
 
-class SchnappsBuild(build_py):
+class SnapshotsBuild(build_py):
     def run(self):
         # build package
         build_py.run(self)
@@ -63,7 +63,7 @@ setuptools.setup(
         'git+https://gitlab.labs.nic.cz/turris/reforis/reforis-distutils.git#egg=reforis-distutils',
     ],
     entry_points={
-        'foris.plugins': f'{NAME} = {NAME}:schnapps'
+        'foris.plugins': f'{NAME} = {NAME}:snapshots'
     },
     classifiers=[
         'Framework :: Flask',
@@ -76,7 +76,7 @@ setuptools.setup(
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
     ],
     cmdclass={
-        'build_py': SchnappsBuild,
+        'build_py': SnapshotsBuild,
     },
     zip_safe=False,
 )

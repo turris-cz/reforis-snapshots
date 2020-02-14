@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Snapshots /> should render spinner 1`] = `
+<div>
+  <h1>
+    Snapshots
+  </h1>
+  <p>
+    This is an addition to Schnapps command-line utility which can provide more 
+    <a
+      href="https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps"
+    >
+      advanced options
+    </a>
+    .
+  </p>
+  <div
+    class="spinner-wrapper my-3 text-center"
+  >
+    <div
+      class="spinner-border"
+      role="status"
+    >
+      <span
+        class="sr-only"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Snapshots /> should render table 1`] = `
+<div>
+  <h1>
+    Snapshots
+  </h1>
+  <p>
+    This is an addition to Schnapps command-line utility which can provide more 
+    <a
+      href="https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps"
+    >
+      advanced options
+    </a>
+    .
+  </p>
+  <div
+    class="col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+  >
+    <form>
+      <h3>
+        Create new snapshot
+      </h3>
+      <div
+        class="form-group"
+      >
+        <label
+          for="1"
+        >
+          Description
+        </label>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control  is-invalid"
+            id="1"
+            maxlength="50"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="invalid-feedback"
+        >
+          Description is required.
+        </div>
+      </div>
+      <div
+        class="text-right"
+      >
+        <button
+          class="btn btn-primary  col-sm-12 col-lg-3"
+          disabled=""
+          type="submit"
+        >
+           
+           
+          Save
+        </button>
+      </div>
+    </form>
+  </div>
+  <h3>
+    Available Snapshots
+  </h3>
+  <div
+    class="table-responsive"
+  >
+    <table
+      class="table table-hover snapshots-table"
+    >
+      <thead>
+        <tr>
+          <th
+            class="text-center"
+            scope="col"
+          >
+            Number
+          </th>
+          <th
+            class="text-center"
+            scope="col"
+          >
+            Type
+          </th>
+          <th
+            scope="col"
+          >
+            Description
+          </th>
+          <th
+            class="snaphots-table-created-at"
+            scope="col"
+          >
+            Created at
+          </th>
+          <th
+            class="text-center"
+            scope="col"
+          >
+            Size
+          </th>
+          <th
+            aria-label="Rollback"
+            scope="col"
+          />
+          <th
+            aria-label="Delete"
+            scope="col"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            class="text-center"
+          >
+            1
+          </td>
+          <td
+            class="text-center"
+          >
+            single
+          </td>
+          <td>
+            Whatever
+          </td>
+          <td
+            class="text-center"
+          >
+            2020-01-30T10:27:34Z
+          </td>
+          <td
+            class="text-center"
+          >
+            808 kB
+          </td>
+          <td
+            class="text-center"
+          >
+            <button
+              class="btn btn-sm btn-primary"
+              type="button"
+            >
+               
+               
+              <i
+                class="fa fa-undo mr-2 snapshots-table-delete-icon"
+              />
+              Rollback
+            </button>
+          </td>
+          <td
+            class="text-center"
+          >
+            <button
+              class="btn btn-sm btn-danger"
+              type="button"
+            >
+               
+               
+              <i
+                class="fa fa-trash-alt mr-2 snapshots-table-delete-icon"
+              />
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="text-center"
+          >
+            2
+          </td>
+          <td
+            class="text-center"
+          >
+            rollback
+          </td>
+          <td>
+            Something
+          </td>
+          <td
+            class="text-center"
+          >
+            2020-01-31T10:27:34Z
+          </td>
+          <td
+            class="text-center"
+          >
+            909 kB
+          </td>
+          <td
+            class="text-center"
+          >
+            <button
+              class="btn btn-sm btn-primary"
+              type="button"
+            >
+               
+               
+              <i
+                class="fa fa-undo mr-2 snapshots-table-delete-icon"
+              />
+              Rollback
+            </button>
+          </td>
+          <td
+            class="text-center"
+          >
+            <button
+              class="btn btn-sm btn-danger"
+              type="button"
+            >
+               
+               
+              <i
+                class="fa fa-trash-alt mr-2 snapshots-table-delete-icon"
+              />
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
