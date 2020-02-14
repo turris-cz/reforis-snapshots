@@ -5,14 +5,14 @@
  * See /LICENSE for more information.
  */
 
-import Schnapps from "./schnapps/Schnapps";
+import Snapshots from "./snapshots/Snapshots";
 
-const SchnappsPlugin = {
-    name: _("Schnapps"),
+const SnapshotsPlugin = {
+    name: _("Snapshots"),
     submenuId: "administration",
     weight: 100,
-    path: "/schnapps",
-    component: Schnapps,
+    path: "/snapshots",
+    component: Snapshots,
 };
 
-ForisPlugins.push(SchnappsPlugin);
+ForisPlugins.push(SnapshotsPlugin);

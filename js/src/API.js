@@ -7,11 +7,11 @@
 
 import { REFORIS_URL_PREFIX } from "foris";
 
-const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/schnapps/api`;
+const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/snapshots/api`;
 
 const API_URLs = new Proxy(
     {
-        example: "/example",
+        snapshots: "/snapshots",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,

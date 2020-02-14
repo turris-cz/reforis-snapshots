@@ -7,22 +7,74 @@ from http import HTTPStatus
 from reforis.test_utils import mock_backend_response
 
 
-@mock_backend_response({'example_module': {'example_action': {'key': 'value'}}})
-def test_get_example(client):
-    response = client.get('/schnapps/api/example')
+SNAPSHOTS_URL = '/snapshots/api/snapshots'
+SNAPSHOT_URL = f"{SNAPSHOTS_URL}/1234"
+ROLLBACK_SNAPSHOT_URL = f"{SNAPSHOTS_URL}/1234/rollback"
+
+
+@mock_backend_response({'schnapps': {'list': {'snapshots': ['foo', 'bar']}}})
+def test_get_snapshots(client):
+    response = client.get(SNAPSHOTS_URL)
     assert response.status_code == HTTPStatus.OK
-    assert response.json['key'] == 'value'
+    assert response.json == ['foo', 'bar']
 
 
-@mock_backend_response({'example_module': {'example_action': {'result': True}}})
-def test_post_example_invalid_json(client):
-    response = client.post('/schnapps/api/example', json=False)
+@mock_backend_response({'schnapps': {'create': {'result': True}}})
+def test_post_snapshot(client):
+    response = client.post(
+        SNAPSHOTS_URL, json={'description': 'Lorem ipsum dolor sit amet.'},
+    )
+    assert response.status_code == HTTPStatus.ACCEPTED
+    assert response.json == {'result': True}
+
+
+def test_post_snapshot_missing_description(client):
+    response = client.post(
+        SNAPSHOTS_URL, json={'foo': 'Lorem ipsum dolor sit amet.'},
+    )
     assert response.status_code == HTTPStatus.BAD_REQUEST
-    assert response.json == 'Invalid JSON'
+    assert response.json == {'description': 'Missing data for required field.'}
 
 
-@mock_backend_response({'example_module': {'example_action': {'key': 'value'}}})
-def test_post_example_backend_error(client):
-    response = client.post('/schnapps/api/example', json={'modules': []})
+@mock_backend_response({'schnapps': {'create': {'result': True}}})
+def test_post_snapshot_invalid_json(client):
+    response = client.post(
+        SNAPSHOTS_URL, json={'foo': 'Lorem ipsum dolor sit amet.'},
+    )
+    assert response.status_code == HTTPStatus.BAD_REQUEST
+    assert response.json == {'description': 'Missing data for required field.'}
+
+
+@mock_backend_response({'schnapps': {'create': {'result': False}}})
+def test_post_snapshot_backend_error(client):
+    response = client.post(
+        SNAPSHOTS_URL, json={'description': 'Lorem ipsum dolor sit amet.'},
+    )
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
-    assert response.json == 'Cannot create entity'
+    assert response.json == 'Cannot create snapshot.'
+
+
+@mock_backend_response({'schnapps': {'delete': {'result': True}}})
+def test_delete_device(client):
+    response = client.delete(SNAPSHOT_URL)
+    assert response.status_code == HTTPStatus.NO_CONTENT
+
+
+@mock_backend_response({'schnapps': {'delete': {'result': False}}})
+def test_delete_device_backend_error(client):
+    response = client.delete(SNAPSHOT_URL)
+    assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
+    assert response.json == 'Cannot delete snapshot.'
+
+
+@mock_backend_response({'schnapps': {'rollback': {'result': True}}})
+def test_rollback_snapshot(client):
+    response = client.put(ROLLBACK_SNAPSHOT_URL)
+    assert response.status_code == HTTPStatus.NO_CONTENT
+
+
+@mock_backend_response({'schnapps': {'rollback': {'result': False}}})
+def test_rollback_snapshot_backend_error(client):
+    response = client.put(ROLLBACK_SNAPSHOT_URL)
+    assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
+    assert response.json == 'Cannot rollback to snapshot.'
