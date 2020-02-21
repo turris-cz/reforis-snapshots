@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Button } from "foris";
+import { Button, toLocaleDateString } from "foris";
 
 import "./SnapshotsTable.css";
 
@@ -33,12 +33,10 @@ export default function SnapshotsTable({ snapshots, rollbackSnapshot, deleteSnap
                 <thead>
                     <tr>
                         <th scope="col" className="text-center">{_("Number")}</th>
-                        <th scope="col" className="text-center">{_("Type")}</th>
                         <th scope="col">{_("Description")}</th>
                         <th scope="col" className="snaphots-table-created-at">{_("Created at")}</th>
                         <th scope="col" className="text-center">{_("Size")}</th>
-                        <th scope="col" aria-label={_("Rollback")} />
-                        <th scope="col" aria-label={_("Delete")} />
+                        <th scope="col" aria-label={_("Actions")} />
                     </tr>
                 </thead>
                 <tbody>
@@ -65,24 +63,24 @@ SnapshotRow.propTypes = {
 };
 
 function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot }) {
+    const createdAt = toLocaleDateString(snapshot.created, { inputFormat: "YYYY-MM-DD HH:mm:ss Z", outputFormat: "l LT" });
     return (
         <tr>
             <td className="text-center">{snapshot.number}</td>
-            <td className="text-center">{snapshot.type}</td>
             <td>{snapshot.description}</td>
-            <td className="text-center">{snapshot.created}</td>
+            <td className="text-center">{createdAt}</td>
             <td className="text-center">{snapshot.size}</td>
             <td className="text-center">
-                <Button className="btn-sm btn-primary" onClick={rollbackSnapshot}>
-                    <i className="fa fa-undo mr-2 snapshots-table-delete-icon" />
-                    {_("Rollback")}
-                </Button>
-            </td>
-            <td className="text-center">
-                <Button className="btn-sm btn-danger" onClick={deleteSnapshot}>
-                    <i className="fa fa-trash-alt mr-2 snapshots-table-delete-icon" />
-                    {_("Delete")}
-                </Button>
+                <div className="btn-group" role="group" aria-label="Basic example">
+                    <Button className="btn-sm btn-primary" onClick={rollbackSnapshot}>
+                        <i className="fa fa-undo mr-2 snapshots-table-delete-icon" />
+                        {_("Rollback")}
+                    </Button>
+                    <Button className="btn-sm btn-danger" onClick={deleteSnapshot}>
+                        <i className="fa fa-trash-alt mr-2 snapshots-table-delete-icon" />
+                        {_("Delete")}
+                    </Button>
+                </div>
             </td>
         </tr>
     );
