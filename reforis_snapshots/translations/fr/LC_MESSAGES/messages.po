@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 14:58+0100\n"
-"PO-Revision-Date: 2020-03-12 14:01+0000\n"
+"PO-Revision-Date: 2020-03-14 05:33+0000\n"
 "Last-Translator: Florian <floflr@zaclys.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:60
 msgid "Snapshots"
-msgstr ""
+msgstr "Instantanés"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 msgid "Create new snapshot"
@@ -31,7 +31,7 @@ msgstr ""
 #: js/src/snapshots/CreateSnapshotForm.js:41
 #: js/src/snapshots/SnapshotsTable.js:36
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: js/src/snapshots/CreateSnapshotForm.js:60
 msgid "Description is required."
@@ -50,23 +50,23 @@ msgstr ""
 
 #: js/src/snapshots/SnapshotsTable.js:34
 msgid "Number"
-msgstr ""
+msgstr "Nombre"
 
 #: js/src/snapshots/SnapshotsTable.js:35
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: js/src/snapshots/SnapshotsTable.js:37
 msgid "Created at"
-msgstr ""
+msgstr "Créé à"
 
 #: js/src/snapshots/SnapshotsTable.js:38
 msgid "Size"
-msgstr ""
+msgstr "Taille"
 
 #: js/src/snapshots/SnapshotsTable.js:39 js/src/snapshots/SnapshotsTable.js:76
 msgid "Rollback"
-msgstr ""
+msgstr "Restauration"
 
 #: js/src/snapshots/SnapshotsTable.js:40 js/src/snapshots/SnapshotsTable.js:82
 msgid "Delete"
