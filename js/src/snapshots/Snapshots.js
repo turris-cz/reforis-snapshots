@@ -15,7 +15,7 @@ import {
     useUpdateSnapshotsOnDelete, useRollbackSnapshot, useUpdateSnapshotsOnRollback,
 } from "./hooks";
 import CreateSnapshotForm from "./CreateSnapshotForm";
-import SnapshotsTable from "./SnapshotsTable";
+import SnapshotsTable from "./SnapshotsTable/SnapshotsTable";
 
 Snapshots.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -58,7 +58,11 @@ export default function Snapshots({ ws }) {
     return (
         <>
             <h1>{_("Snapshots")}</h1>
-            <p dangerouslySetInnerHTML={{ __html: _("This is an addition to Schnapps command-line utility which can provide more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps'>advanced options</a>.") }} />
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: _("This is an addition to Schnapps command-line utility which can provide more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps'>advanced options</a>."),
+                }}
+            />
             {componentContent}
         </>
     );

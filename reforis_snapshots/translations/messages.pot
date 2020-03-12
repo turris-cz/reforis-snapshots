@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-31 14:58+0100\n"
+"POT-Creation-Date: 2020-03-12 14:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Create new snapshot"
 msgstr ""
 
 #: js/src/snapshots/CreateSnapshotForm.js:41
-#: js/src/snapshots/SnapshotsTable.js:36
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:28
 msgid "Description"
 msgstr ""
 
@@ -38,35 +38,35 @@ msgstr ""
 msgid "Available Snapshots"
 msgstr ""
 
-#: js/src/snapshots/Snapshots.js:61
+#: js/src/snapshots/Snapshots.js:63
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
 "can-do-with-schnapps'>advanced options</a>."
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable.js:34
-msgid "Number"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable.js:35
-msgid "Type"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable.js:37
-msgid "Created at"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable.js:38
-msgid "Size"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable.js:39 js/src/snapshots/SnapshotsTable.js:76
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:34
 msgid "Rollback"
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable.js:40 js/src/snapshots/SnapshotsTable.js:82
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:38
 msgid "Delete"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:27
+msgid "#"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:29
+msgid "Created at"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:30
+msgid "Size"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:31
+msgid "Actions"
 msgstr ""
 
 #: reforis_snapshots/__init__.py:44

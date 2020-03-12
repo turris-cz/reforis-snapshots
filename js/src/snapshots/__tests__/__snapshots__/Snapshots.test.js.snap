@@ -105,7 +105,7 @@ exports[`<Snapshots /> should render table 1`] = `
             class="text-center"
             scope="col"
           >
-            Number
+            #
           </th>
           <th
             scope="col"
@@ -113,7 +113,7 @@ exports[`<Snapshots /> should render table 1`] = `
             Description
           </th>
           <th
-            class="snaphots-table-created-at"
+            class="snapshots-table-created-at"
             scope="col"
           >
             Created at
@@ -154,31 +154,39 @@ exports[`<Snapshots /> should render table 1`] = `
             class="text-center"
           >
             <div
-              aria-label="Basic example"
+              aria-label="Actions"
               class="btn-group"
               role="group"
             >
               <button
-                class="btn btn-sm btn-primary"
+                class="btn btn btn-primary"
                 type="button"
               >
                  
                  
                 <i
-                  class="fa fa-undo mr-2 snapshots-table-delete-icon"
+                  class="fa fa-undo"
                 />
-                Rollback
+                <p
+                  class="disappear-on-sm"
+                >
+                  Rollback
+                </p>
               </button>
               <button
-                class="btn btn-sm btn-danger"
+                class="btn btn btn-danger"
                 type="button"
               >
                  
                  
                 <i
-                  class="fa fa-trash-alt mr-2 snapshots-table-delete-icon"
+                  class="fa fa-trash-alt"
                 />
-                Delete
+                <p
+                  class="disappear-on-sm"
+                >
+                  Delete
+                </p>
               </button>
             </div>
           </td>
@@ -206,31 +214,39 @@ exports[`<Snapshots /> should render table 1`] = `
             class="text-center"
           >
             <div
-              aria-label="Basic example"
+              aria-label="Actions"
               class="btn-group"
               role="group"
             >
               <button
-                class="btn btn-sm btn-primary"
+                class="btn btn btn-primary"
                 type="button"
               >
                  
                  
                 <i
-                  class="fa fa-undo mr-2 snapshots-table-delete-icon"
+                  class="fa fa-undo"
                 />
-                Rollback
+                <p
+                  class="disappear-on-sm"
+                >
+                  Rollback
+                </p>
               </button>
               <button
-                class="btn btn-sm btn-danger"
+                class="btn btn btn-danger"
                 type="button"
               >
                  
                  
                 <i
-                  class="fa fa-trash-alt mr-2 snapshots-table-delete-icon"
+                  class="fa fa-trash-alt"
                 />
-                Delete
+                <p
+                  class="disappear-on-sm"
+                >
+                  Delete
+                </p>
               </button>
             </div>
           </td>
