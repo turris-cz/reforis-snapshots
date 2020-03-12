@@ -1,0 +1,33 @@
+.snapshots-table td {
+    vertical-align: middle;
+}
+
+button svg {
+    width: 100%;
+}
+
+.btn-group button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group button p {
+    margin-left: 0.5rem;
+}
+
+p.disappear-on-sm {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .disappear-on-sm {
+        display: none;
+    }
+}
+
+.snapshots-table-created-at {
+    text-align: center;
+    min-width: 6rem;
+}
