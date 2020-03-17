@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 14:58+0100\n"
-"PO-Revision-Date: 2020-03-14 05:33+0000\n"
-"Last-Translator: Florian <floflr@zaclys.net>\n"
+"PO-Revision-Date: 2020-03-18 12:36+0000\n"
+"Last-Translator: XoD DarK <xod@xoddark.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/fr/>\n"
 "Language: fr\n"
@@ -26,7 +26,7 @@ msgstr "Instantanés"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 msgid "Create new snapshot"
-msgstr ""
+msgstr "Créer un nouvel instantané"
 
 #: js/src/snapshots/CreateSnapshotForm.js:41
 #: js/src/snapshots/SnapshotsTable.js:36
@@ -35,11 +35,11 @@ msgstr "Description"
 
 #: js/src/snapshots/CreateSnapshotForm.js:60
 msgid "Description is required."
-msgstr ""
+msgstr "Une description est requise."
 
 #: js/src/snapshots/Snapshots.js:48
 msgid "Available Snapshots"
-msgstr ""
+msgstr "Instantanés disponibles"
 
 #: js/src/snapshots/Snapshots.js:61
 msgid ""
@@ -47,6 +47,9 @@ msgid ""
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
 "can-do-with-schnapps'>advanced options</a>."
 msgstr ""
+"Il s'agit d'un ajout à l'utilitaire de ligne de commande Schnapps qui peut "
+"fournir plus <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-"
+"you-can-do-with-schnapps'>d'options avancées</a>."
 
 #: js/src/snapshots/SnapshotsTable.js:34
 msgid "Number"
@@ -74,12 +77,12 @@ msgstr "Supprimer"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Impossible de créer un instantané."
 
 #: reforis_snapshots/__init__.py:53
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Impossible de supprimer l'instantané."
 
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "Impossible de revenir à l'instantané."
