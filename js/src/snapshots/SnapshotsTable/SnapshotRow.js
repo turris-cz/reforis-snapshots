@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Button, toLocaleDateString } from "foris";
 
@@ -21,6 +21,20 @@ export default function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot
         inputFormat: "YYYY-MM-DD HH:mm:ss Z",
         outputFormat: "l LT",
     });
+
+    const [deletingInProcess, setDeletingInProcess] = useState(false);
+    function handleDeleteSnapshots() {
+        setDeletingInProcess(true);
+        deleteSnapshot();
+    }
+
+    const [rollbackInProcess, setRollbackInProcess] = useState(false);
+    function handleRollbackSnapshots() {
+        setRollbackInProcess(true);
+        rollbackSnapshot();
+    }
+
+    const buttonsIsDisabled = deletingInProcess || rollbackInProcess;
     return (
         <tr>
             <td className="text-center">{snapshot.number}</td>
@@ -29,11 +43,21 @@ export default function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot
             <td className="text-center">{snapshot.size}</td>
             <td className="text-center">
                 <div className="btn-group" role="group" aria-label="Actions">
-                    <Button className="btn btn-primary" onClick={rollbackSnapshot}>
+                    <Button
+                        className="btn btn-primary"
+                        onClick={handleRollbackSnapshots}
+                        loading={rollbackInProcess}
+                        disabled={buttonsIsDisabled}
+                    >
                         <i className="fa fa-undo" />
                         <p className="disappear-on-sm">{_("Rollback")}</p>
                     </Button>
-                    <Button className="btn btn-danger" onClick={deleteSnapshot}>
+                    <Button
+                        className="btn btn-danger"
+                        onClick={handleDeleteSnapshots}
+                        loading={deletingInProcess}
+                        disabled={buttonsIsDisabled}
+                    >
                         <i className="fa fa-trash-alt" />
                         <p className="disappear-on-sm">{_("Delete")}</p>
                     </Button>
