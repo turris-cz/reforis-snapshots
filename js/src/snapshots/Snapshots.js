@@ -27,17 +27,16 @@ export default function Snapshots({ ws }) {
     const [getState, getSnapshots] = useGetSnapshots(setSnapshots);
     useUpdateSnapshotsOnAdd(ws, getSnapshots);
 
-    const [createState, createSnapshot] = useCreateSnapshot();
+    const [, createSnapshot] = useCreateSnapshot();
 
-    const [rollbackState, rollbackSnapshot] = useRollbackSnapshot();
+    const [, rollbackSnapshot] = useRollbackSnapshot();
     useUpdateSnapshotsOnRollback(ws, getSnapshots);
 
-    const [deleteState, deleteSnapshot] = useDeleteSnapshot();
+    const [, deleteSnapshot] = useDeleteSnapshot();
     useUpdateSnapshotsOnDelete(ws, setSnapshots);
 
     let componentContent;
-    if (getState === API_STATE.INIT
-        || [getState, createState, rollbackState, deleteState].includes(API_STATE.SENDING)) {
+    if (getState === API_STATE.INIT || [getState].includes(API_STATE.SENDING)) {
         componentContent = <Spinner />;
     } else if (getState === API_STATE.ERROR) {
         componentContent = <ErrorMessage />;

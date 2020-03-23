@@ -16,12 +16,10 @@ import API_URLs from "API";
 export function useGetSnapshots(setSnapshots) {
     const [getSnapshotsResponse, getSnapshots] = useAPIGet(API_URLs.snapshots);
 
-    // Initial data fetch
     useEffect(() => {
         getSnapshots();
     }, [getSnapshots]);
 
-    // Update snapshots data
     useEffect(() => {
         if (getSnapshotsResponse.state === API_STATE.SUCCESS) {
             setSnapshots(getSnapshotsResponse.data);
@@ -37,6 +35,8 @@ export function useUpdateSnapshotsOnAdd(ws, getSnapshots) {
         if (!addNotification) {
             return;
         }
+        // Unfortunately, foris-controller-schnapps module doesn't provide all info about new
+        // snapshot when it's created. Thus we need to refresh whole list to get a new one.
         getSnapshots();
     }, [addNotification, getSnapshots]);
 }
@@ -44,7 +44,6 @@ export function useUpdateSnapshotsOnAdd(ws, getSnapshots) {
 export function useCreateSnapshot() {
     const [setAlert] = useAlert();
 
-    // Handle API request
     const [postSnapshotResponse, postSnapshot] = useAPIPost(`${API_URLs.snapshots}`);
     useEffect(() => {
         if (postSnapshotResponse.state === API_STATE.ERROR) {
@@ -58,7 +57,6 @@ export function useCreateSnapshot() {
 export function useDeleteSnapshot() {
     const [setAlert] = useAlert();
 
-    // Handle API request
     const [deleteSnapshotResponse, deleteSnapshot] = useAPIDelete(`${API_URLs.snapshots}`);
     useEffect(() => {
         if (deleteSnapshotResponse.state === API_STATE.ERROR) {
@@ -72,7 +70,6 @@ export function useDeleteSnapshot() {
 export function useUpdateSnapshotsOnDelete(ws, setSnapshots) {
     const [deleteNotification] = useWSForisModule(ws, "schnapps", "delete");
 
-    // Update devices data
     const removeSnapshotFromTable = useCallback((number) => {
         setSnapshots((previousDevices) => {
             const snapshots = [...previousDevices];
@@ -97,7 +94,6 @@ export function useUpdateSnapshotsOnDelete(ws, setSnapshots) {
 export function useRollbackSnapshot() {
     const [setAlert] = useAlert();
 
-    // Handle API request
     const [putSnapshotResponse, putSnapshot] = useAPIPut(`${API_URLs.snapshots}`);
     useEffect(() => {
         if (putSnapshotResponse.state === API_STATE.ERROR) {
