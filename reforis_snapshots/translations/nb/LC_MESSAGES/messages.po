@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-01-31 14:58+0100\n"
-"PO-Revision-Date: 2020-05-31 21:41+0000\n"
+"PO-Revision-Date: 2020-07-09 23:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:60
@@ -47,6 +47,9 @@ msgid ""
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
 "can-do-with-schnapps'>advanced options</a>."
 msgstr ""
+"Dette er et tillegg til kommandolinjeverktøyet Schnapps, noe som gir flere "
+"<a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-"
+"schnapps'>avanserte valg</a>."
 
 #: js/src/snapshots/SnapshotsTable.js:34
 msgid "Number"
@@ -66,7 +69,7 @@ msgstr "Størrelse"
 
 #: js/src/snapshots/SnapshotsTable.js:39 js/src/snapshots/SnapshotsTable.js:76
 msgid "Rollback"
-msgstr ""
+msgstr "Reverser"
 
 #: js/src/snapshots/SnapshotsTable.js:40 js/src/snapshots/SnapshotsTable.js:82
 msgid "Delete"
