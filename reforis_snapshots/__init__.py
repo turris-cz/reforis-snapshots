@@ -62,3 +62,12 @@ def rollback_to_snapshot(snapshot_number):
         raise APIError(_('Cannot rollback to snapshot.'), HTTPStatus.INTERNAL_SERVER_ERROR)
 
     return '', HTTPStatus.NO_CONTENT
+
+
+@blueprint.route('/snapshots/factory_reset', methods=['PUT'])
+def factory_reset():
+    response = current_app.backend.perform('schnapps', 'factory_reset')
+    if response.get('result') is not True:
+        raise APIError(_('Cannot perfom factory reset.'), HTTPStatus.INTERNAL_SERVER_ERROR)
+
+    return '', HTTPStatus.NO_CONTENT

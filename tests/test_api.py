@@ -10,6 +10,7 @@ from reforis.test_utils import mock_backend_response
 SNAPSHOTS_URL = '/snapshots/api/snapshots'
 SNAPSHOT_URL = f"{SNAPSHOTS_URL}/1234"
 ROLLBACK_SNAPSHOT_URL = f"{SNAPSHOTS_URL}/1234/rollback"
+FACTORY_RESET_URL = f"{SNAPSHOTS_URL}/factory_reset"
 
 
 @mock_backend_response({'schnapps': {'list': {'snapshots': ['foo', 'bar']}}})
@@ -78,3 +79,16 @@ def test_rollback_snapshot_backend_error(client):
     response = client.put(ROLLBACK_SNAPSHOT_URL)
     assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
     assert response.json == 'Cannot rollback to snapshot.'
+
+
+@mock_backend_response({'schnapps': {'factory_reset': {'result': True}}})
+def test_factory_reset_snapshot(client):
+    response = client.put(FACTORY_RESET_URL)
+    assert response.status_code == HTTPStatus.NO_CONTENT
+
+
+@mock_backend_response({'schnapps': {'factory_reset': {'result': False}}})
+def test_factory_reset_snapshot_backend_error(client):
+    response = client.put(FACTORY_RESET_URL)
+    assert response.status_code == HTTPStatus.INTERNAL_SERVER_ERROR
+    assert response.json == 'Cannot perfom factory reset.'
