@@ -16,7 +16,11 @@ SnapshotRow.propTypes = {
     rollbackSnapshot: PropTypes.func.isRequired,
     deleteSnapshot: PropTypes.func.isRequired,
 };
-export default function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot }) {
+export default function SnapshotRow({
+    snapshot,
+    rollbackSnapshot,
+    deleteSnapshot,
+}) {
     const createdAt = toLocaleDateString(snapshot.created, {
         inputFormat: "YYYY-MM-DD HH:mm:ss Z",
         outputFormat: "l LT",

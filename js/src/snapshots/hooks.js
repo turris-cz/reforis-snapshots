@@ -8,7 +8,13 @@
 import { useEffect, useCallback } from "react";
 
 import {
-    useAlert, useWSForisModule, useAPIGet, useAPIPost, useAPIDelete, useAPIPut, API_STATE,
+    useAlert,
+    useWSForisModule,
+    useAPIGet,
+    useAPIPost,
+    useAPIDelete,
+    useAPIPut,
+    API_STATE,
 } from "foris";
 
 import API_URLs from "API";
@@ -44,7 +50,9 @@ export function useUpdateSnapshotsOnAdd(ws, getSnapshots) {
 export function useCreateSnapshot() {
     const [setAlert] = useAlert();
 
-    const [postSnapshotResponse, postSnapshot] = useAPIPost(`${API_URLs.snapshots}`);
+    const [postSnapshotResponse, postSnapshot] = useAPIPost(
+        `${API_URLs.snapshots}`
+    );
     useEffect(() => {
         if (postSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(postSnapshotResponse.data);
@@ -57,7 +65,9 @@ export function useCreateSnapshot() {
 export function useDeleteSnapshot() {
     const [setAlert] = useAlert();
 
-    const [deleteSnapshotResponse, deleteSnapshot] = useAPIDelete(`${API_URLs.snapshots}`);
+    const [deleteSnapshotResponse, deleteSnapshot] = useAPIDelete(
+        `${API_URLs.snapshots}`
+    );
     useEffect(() => {
         if (deleteSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(deleteSnapshotResponse.data);
@@ -70,18 +80,21 @@ export function useDeleteSnapshot() {
 export function useUpdateSnapshotsOnDelete(ws, setSnapshots) {
     const [deleteNotification] = useWSForisModule(ws, "schnapps", "delete");
 
-    const removeSnapshotFromTable = useCallback((number) => {
-        setSnapshots((previousDevices) => {
-            const snapshots = [...previousDevices];
-            const deleteIndex = snapshots.findIndex(
-                (snapshot) => snapshot.number === number,
-            );
-            if (deleteIndex !== -1) {
-                snapshots.splice(deleteIndex, 1);
-            }
-            return snapshots;
-        });
-    }, [setSnapshots]);
+    const removeSnapshotFromTable = useCallback(
+        (number) => {
+            setSnapshots((previousDevices) => {
+                const snapshots = [...previousDevices];
+                const deleteIndex = snapshots.findIndex(
+                    (snapshot) => snapshot.number === number
+                );
+                if (deleteIndex !== -1) {
+                    snapshots.splice(deleteIndex, 1);
+                }
+                return snapshots;
+            });
+        },
+        [setSnapshots]
+    );
 
     useEffect(() => {
         if (!deleteNotification) {
@@ -94,7 +107,9 @@ export function useUpdateSnapshotsOnDelete(ws, setSnapshots) {
 export function useRollbackSnapshot() {
     const [setAlert] = useAlert();
 
-    const [putSnapshotResponse, putSnapshot] = useAPIPut(`${API_URLs.snapshots}`);
+    const [putSnapshotResponse, putSnapshot] = useAPIPut(
+        `${API_URLs.snapshots}`
+    );
     useEffect(() => {
         if (putSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(putSnapshotResponse.data);
