@@ -9,8 +9,15 @@ exports[`<Snapshots /> should render spinner 1`] = `
     This is an addition to Schnapps command-line utility which can provide more 
     <a
       href="https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       advanced options
+      <sup>
+        <i
+          class="fas fa-external-link-alt link-outside-icon fa-xs"
+        />
+      </sup>
     </a>
     .
   </p>
@@ -38,18 +45,27 @@ exports[`<Snapshots /> should render table 1`] = `
     This is an addition to Schnapps command-line utility which can provide more 
     <a
       href="https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       advanced options
+      <sup>
+        <i
+          class="fas fa-external-link-alt link-outside-icon fa-xs"
+        />
+      </sup>
     </a>
     .
   </p>
   <div
-    class="col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
   >
-    <form>
-      <h3>
-        Create new snapshot
-      </h3>
+    <form
+      class="mb-3 mb-md-0"
+    >
+      <h2>
+        Create Snapshot
+      </h2>
       <div
         class="form-group"
       >
@@ -79,180 +95,162 @@ exports[`<Snapshots /> should render table 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-lg-3"
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
           disabled=""
           type="submit"
         >
-           
-           
           Save
         </button>
       </div>
     </form>
-  </div>
-  <h3>
-    Available Snapshots
-  </h3>
-  <div
-    class="table-responsive"
-  >
-    <table
-      class="table table-hover snapshots-table"
+    <h2>
+      Available Snapshots
+    </h2>
+    <div
+      class="table-responsive"
     >
-      <thead>
-        <tr>
-          <th
-            class="text-center"
-            scope="col"
-          >
-            #
-          </th>
-          <th
-            scope="col"
-          >
-            Description
-          </th>
-          <th
-            class="snapshots-table-created-at"
-            scope="col"
-          >
-            Created at
-          </th>
-          <th
-            class="text-center"
-            scope="col"
-          >
-            Size
-          </th>
-          <th
-            aria-label="Actions"
-            scope="col"
-          />
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td
-            class="text-center"
-          >
-            1
-          </td>
-          <td>
-            Whatever
-          </td>
-          <td
-            class="text-center"
-          >
-            1/30/2020 10:27 AM
-          </td>
-          <td
-            class="text-center"
-          >
-            808 kB
-          </td>
-          <td
-            class="text-center"
-          >
-            <div
-              aria-label="Actions"
-              class="btn-group"
-              role="group"
+      <table
+        class="table table-hover snapshots-table"
+      >
+        <thead
+          class="thead-light"
+        >
+          <tr>
+            <th
+              class="text-center"
+              scope="col"
             >
-              <button
-                class="btn btn btn-primary"
-                type="button"
-              >
-                 
-                 
-                <i
-                  class="fa fa-undo"
-                />
-                <p
-                  class="disappear-on-sm"
-                >
-                  Rollback
-                </p>
-              </button>
-              <button
-                class="btn btn btn-danger"
-                type="button"
-              >
-                 
-                 
-                <i
-                  class="fa fa-trash-alt"
-                />
-                <p
-                  class="disappear-on-sm"
-                >
-                  Delete
-                </p>
-              </button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td
-            class="text-center"
-          >
-            2
-          </td>
-          <td>
-            Something
-          </td>
-          <td
-            class="text-center"
-          >
-            1/31/2020 10:27 AM
-          </td>
-          <td
-            class="text-center"
-          >
-            909 kB
-          </td>
-          <td
-            class="text-center"
-          >
-            <div
-              aria-label="Actions"
-              class="btn-group"
-              role="group"
+              #
+            </th>
+            <th
+              scope="col"
             >
-              <button
-                class="btn btn btn-primary"
-                type="button"
+              Description
+            </th>
+            <th
+              scope="col"
+            >
+              Created at
+            </th>
+            <th
+              scope="col"
+            >
+              Size
+            </th>
+            <th
+              aria-label="Actions"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="text-center"
+            >
+              1
+            </td>
+            <td>
+              Whatever
+            </td>
+            <td>
+              1/30/2020 10:27 AM
+            </td>
+            <td>
+              808 kB
+            </td>
+            <td
+              class="text-right"
+            >
+              <div
+                aria-label="Actions"
+                class="btn-group btn-group-sm"
+                role="group"
               >
-                 
-                 
-                <i
-                  class="fa fa-undo"
-                />
-                <p
-                  class="disappear-on-sm"
+                <button
+                  class="btn btn btn-primary"
+                  type="button"
                 >
-                  Rollback
-                </p>
-              </button>
-              <button
-                class="btn btn btn-danger"
-                type="button"
+                  <i
+                    class="fa fa-undo"
+                  />
+                  <p
+                    class="disappear-on-sm"
+                  >
+                    Rollback
+                  </p>
+                </button>
+                <button
+                  class="btn btn btn-danger"
+                  type="button"
+                >
+                  <i
+                    class="fa fa-trash-alt"
+                  />
+                  <p
+                    class="disappear-on-sm"
+                  >
+                    Delete
+                  </p>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="text-center"
+            >
+              2
+            </td>
+            <td>
+              Something
+            </td>
+            <td>
+              1/31/2020 10:27 AM
+            </td>
+            <td>
+              909 kB
+            </td>
+            <td
+              class="text-right"
+            >
+              <div
+                aria-label="Actions"
+                class="btn-group btn-group-sm"
+                role="group"
               >
-                 
-                 
-                <i
-                  class="fa fa-trash-alt"
-                />
-                <p
-                  class="disappear-on-sm"
+                <button
+                  class="btn btn btn-primary"
+                  type="button"
                 >
-                  Delete
-                </p>
-              </button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+                  <i
+                    class="fa fa-undo"
+                  />
+                  <p
+                    class="disappear-on-sm"
+                  >
+                    Rollback
+                  </p>
+                </button>
+                <button
+                  class="btn btn btn-danger"
+                  type="button"
+                >
+                  <i
+                    class="fa fa-trash-alt"
+                  />
+                  <p
+                    class="disappear-on-sm"
+                  >
+                    Delete
+                  </p>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 `;
