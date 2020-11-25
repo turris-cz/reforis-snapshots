@@ -43,10 +43,14 @@ export default function SnapshotRow({
         <tr>
             <td className="text-center">{snapshot.number}</td>
             <td>{snapshot.description}</td>
-            <td className="text-center">{createdAt}</td>
-            <td className="text-center">{snapshot.size}</td>
-            <td className="text-center">
-                <div className="btn-group" role="group" aria-label="Actions">
+            <td>{createdAt}</td>
+            <td>{snapshot.size}</td>
+            <td className="text-right">
+                <div
+                    className="btn-group btn-group-sm"
+                    role="group"
+                    aria-label="Actions"
+                >
                     <Button
                         className="btn btn-primary"
                         onClick={handleRollbackSnapshots}

@@ -26,18 +26,14 @@ export default function SnapshotsTable({
     return (
         <div className="table-responsive">
             <table className="table table-hover snapshots-table">
-                <thead>
+                <thead className="thead-light">
                     <tr>
                         <th scope="col" className="text-center">
                             {_("#")}
                         </th>
                         <th scope="col">{_("Description")}</th>
-                        <th scope="col" className="snapshots-table-created-at">
-                            {_("Created at")}
-                        </th>
-                        <th scope="col" className="text-center">
-                            {_("Size")}
-                        </th>
+                        <th scope="col">{_("Created at")}</th>
+                        <th scope="col">{_("Size")}</th>
                         <th scope="col" aria-label={_("Actions")} />
                     </tr>
                 </thead>
