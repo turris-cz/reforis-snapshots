@@ -12,10 +12,11 @@ const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/snapshots/api`;
 const API_URLs = new Proxy(
     {
         snapshots: "/snapshots",
+        factory: "/snapshots/factory_reset",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,
-    },
+    }
 );
 
 export default API_URLs;

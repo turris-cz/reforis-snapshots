@@ -16,7 +16,11 @@ SnapshotRow.propTypes = {
     rollbackSnapshot: PropTypes.func.isRequired,
     deleteSnapshot: PropTypes.func.isRequired,
 };
-export default function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot }) {
+export default function SnapshotRow({
+    snapshot,
+    rollbackSnapshot,
+    deleteSnapshot,
+}) {
     const createdAt = toLocaleDateString(snapshot.created, {
         inputFormat: "YYYY-MM-DD HH:mm:ss Z",
         outputFormat: "l LT",
@@ -39,10 +43,14 @@ export default function SnapshotRow({ snapshot, rollbackSnapshot, deleteSnapshot
         <tr>
             <td className="text-center">{snapshot.number}</td>
             <td>{snapshot.description}</td>
-            <td className="text-center">{createdAt}</td>
-            <td className="text-center">{snapshot.size}</td>
-            <td className="text-center">
-                <div className="btn-group" role="group" aria-label="Actions">
+            <td>{createdAt}</td>
+            <td>{snapshot.size}</td>
+            <td className="text-right">
+                <div
+                    className="btn-group btn-group-sm"
+                    role="group"
+                    aria-label="Actions"
+                >
                     <Button
                         className="btn btn-primary"
                         onClick={handleRollbackSnapshots}

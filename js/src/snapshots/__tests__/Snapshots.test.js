@@ -8,8 +8,16 @@
 import React from "react";
 import mockAxios from "jest-mock-axios";
 import {
-    render, wait, getAllByText, queryByText, getByText, getByLabelText, queryByRole, getByRole,
-    act, fireEvent,
+    render,
+    wait,
+    getAllByText,
+    queryByText,
+    getByText,
+    getByLabelText,
+    queryByRole,
+    getByRole,
+    act,
+    fireEvent,
 } from "foris/testUtils/customTestRender";
 import { mockJSONError } from "foris/testUtils/network";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
@@ -19,16 +27,28 @@ import Snapshots from "../Snapshots";
 
 const SNAPSHOTS = [
     {
-        number: 1, type: "single", description: "Whatever", created: "2020-01-30T10:27:34Z", size: "808 kB",
+        number: 1,
+        type: "single",
+        description: "Whatever",
+        created: "2020-01-30T10:27:34Z",
+        size: "808 kB",
     },
     {
-        number: 2, type: "rollback", description: "Something", created: "2020-01-31T10:27:34Z", size: "909 kB",
+        number: 2,
+        type: "rollback",
+        description: "Something",
+        created: "2020-01-31T10:27:34Z",
+        size: "909 kB",
     },
 ];
 
 function creteSnapshot(number, description) {
     return {
-        number, type: "single", description, created: "2020-01-30T10:27:34Z", size: "808 kB",
+        number,
+        type: "single",
+        description,
+        created: "2020-01-30T10:27:34Z",
+        size: "808 kB",
     };
 }
 
@@ -47,7 +67,8 @@ describe("<Snapshots />", () => {
 
     it("should render table", async () => {
         expect(mockAxios.get).toBeCalledWith(
-            "/reforis/snapshots/api/snapshots", expect.anything(),
+            "/reforis/snapshots/api/snapshots",
+            expect.anything()
         );
         mockAxios.mockResponse({ data: SNAPSHOTS });
         await wait(() => getByText(container, SNAPSHOTS[0].description));
@@ -56,23 +77,27 @@ describe("<Snapshots />", () => {
 
     it("should handle GET error", async () => {
         mockJSONError();
-        await wait(() => expect(
-            getByText(container, "An error occurred while fetching data."),
-        ).toBeTruthy());
+        await wait(() =>
+            expect(
+                getByText(container, "An error occurred while fetching data.")
+            ).toBeTruthy()
+        );
     });
 
     it("should display spinner while snapshot is being added", async () => {
         // Prepare table
         mockAxios.mockResponse({ data: SNAPSHOTS });
         // Initially there's no spinner
-        await wait(() => expect(
-            queryByRole(container, "status"),
-        ).toBeNull());
+        await wait(() => expect(queryByRole(container, "status")).toBeNull());
 
         // Create new snapshot
-        act(() => webSockets.dispatch(
-            { module: "schnapps", action: "create", data: {} },
-        ));
+        act(() =>
+            webSockets.dispatch({
+                module: "schnapps",
+                action: "create",
+                data: {},
+            })
+        );
         // Spinner should appear
         await wait(() => getByRole(container, "status"));
     });
@@ -81,9 +106,7 @@ describe("<Snapshots />", () => {
         // Prepare table
         mockAxios.mockResponse({ data: SNAPSHOTS });
         // Initially there's no spinner
-        await wait(() => expect(
-            queryByRole(container, "status"),
-        ).toBeNull());
+        await wait(() => expect(queryByRole(container, "status")).toBeNull());
 
         // Delete device
         fireEvent.click(getAllByText(container, "Delete")[0]);
@@ -95,9 +118,7 @@ describe("<Snapshots />", () => {
         // Prepare table
         mockAxios.mockResponse({ data: SNAPSHOTS });
         // Initially there's no spinner
-        await wait(() => expect(
-            queryByRole(container, "status"),
-        ).toBeNull());
+        await wait(() => expect(queryByRole(container, "status")).toBeNull());
 
         // Delete device
         fireEvent.click(getAllByText(container, "Rollback")[0]);
@@ -115,11 +136,21 @@ describe("<Snapshots />", () => {
         it("should refresh table after new snapshot is added", async () => {
             // Create new snapshot
             const newDescription = "Nothing";
-            act(() => webSockets.dispatch(
-                { module: "schnapps", action: "create", data: {} },
-            ));
-            expect(mockAxios.get).toHaveBeenNthCalledWith(2, "/reforis/snapshots/api/snapshots", expect.anything());
-            mockAxios.mockResponse({ data: [...SNAPSHOTS, creteSnapshot(3, newDescription)] });
+            act(() =>
+                webSockets.dispatch({
+                    module: "schnapps",
+                    action: "create",
+                    data: {},
+                })
+            );
+            expect(mockAxios.get).toHaveBeenNthCalledWith(
+                2,
+                "/reforis/snapshots/api/snapshots",
+                expect.anything()
+            );
+            mockAxios.mockResponse({
+                data: [...SNAPSHOTS, creteSnapshot(3, newDescription)],
+            });
             // New snapshot should appear
             await wait(() => getByText(container, newDescription));
         });
@@ -129,15 +160,24 @@ describe("<Snapshots />", () => {
             const deletedNumber = SNAPSHOTS[0].number;
             fireEvent.click(getAllByText(container, "Delete")[0]);
             expect(mockAxios.delete).toBeCalledWith(
-                `/reforis/snapshots/api/snapshots/${deletedNumber}`, expect.anything(),
+                `/reforis/snapshots/api/snapshots/${deletedNumber}`,
+                expect.anything()
             );
             mockAxios.mockResponse({ data: {} });
 
-            act(() => webSockets.dispatch(
-                { module: "schnapps", action: "delete", data: { number: deletedNumber } },
-            ));
+            act(() =>
+                webSockets.dispatch({
+                    module: "schnapps",
+                    action: "delete",
+                    data: { number: deletedNumber },
+                })
+            );
             // Device should disappear
-            await wait(() => expect(queryByText(container, SNAPSHOTS[0].description)).toBeNull());
+            await wait(() =>
+                expect(
+                    queryByText(container, SNAPSHOTS[0].description)
+                ).toBeNull()
+            );
         });
 
         it("should handle error on removal", async () => {
@@ -156,17 +196,29 @@ describe("<Snapshots />", () => {
             const rollbackToNumber = SNAPSHOTS[0].number;
             fireEvent.click(getAllByText(container, "Rollback")[0]);
             expect(mockAxios.put).toBeCalledWith(
-                `/reforis/snapshots/api/snapshots/${rollbackToNumber}/rollback`, undefined, expect.anything(),
+                `/reforis/snapshots/api/snapshots/${rollbackToNumber}/rollback`,
+                undefined,
+                expect.anything()
             );
             mockAxios.mockResponse({ data: {} });
 
-            act(() => webSockets.dispatch(
-                { module: "schnapps", action: "rollback", data: {} },
-            ));
+            act(() =>
+                webSockets.dispatch({
+                    module: "schnapps",
+                    action: "rollback",
+                    data: {},
+                })
+            );
 
             const newDescription = `Rollback to ${rollbackToNumber}`;
-            expect(mockAxios.get).toHaveBeenNthCalledWith(2, "/reforis/snapshots/api/snapshots", expect.anything());
-            mockAxios.mockResponse({ data: [...SNAPSHOTS, creteSnapshot(3, newDescription)] });
+            expect(mockAxios.get).toHaveBeenNthCalledWith(
+                2,
+                "/reforis/snapshots/api/snapshots",
+                expect.anything()
+            );
+            mockAxios.mockResponse({
+                data: [...SNAPSHOTS, creteSnapshot(3, newDescription)],
+            });
             // New snapshot should appear
             await wait(() => getByText(container, newDescription));
         });
@@ -195,7 +247,9 @@ describe("<Snapshots />", () => {
                 // Prepare form
                 const description = "Discovery";
                 expect(submitButton.disabled).toBe(true);
-                fireEvent.change(descriptionInput, { target: { value: description } });
+                fireEvent.change(descriptionInput, {
+                    target: { value: description },
+                });
                 expect(submitButton.disabled).toBe(false);
 
                 // Create new snapshot
@@ -203,13 +257,15 @@ describe("<Snapshots />", () => {
                 expect(mockAxios.post).toBeCalledWith(
                     "/reforis/snapshots/api/snapshots",
                     { description },
-                    expect.anything(),
+                    expect.anything()
                 );
             });
 
             it("should handle API error on creating snapshot", async () => {
                 // Request new snapshot
-                fireEvent.change(descriptionInput, { target: { value: "qwe" } });
+                fireEvent.change(descriptionInput, {
+                    target: { value: "qwe" },
+                });
                 fireEvent.click(submitButton);
 
                 // Handle error
@@ -222,7 +278,9 @@ describe("<Snapshots />", () => {
 
             it("should validate new snapshot description", async () => {
                 fireEvent.change(descriptionInput, { target: { value: "" } });
-                expect(getByText(container, "Description is required.")).toBeDefined();
+                expect(
+                    getByText(container, "Description is required.")
+                ).toBeDefined();
                 expect(submitButton.disabled).toBe(true);
             });
         });

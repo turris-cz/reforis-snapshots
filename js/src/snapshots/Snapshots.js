@@ -8,11 +8,16 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import { API_STATE, Spinner, ErrorMessage } from "foris";
+import { API_STATE, Spinner, ErrorMessage, formFieldsSize } from "foris";
 
 import {
-    useGetSnapshots, useUpdateSnapshotsOnAdd, useCreateSnapshot, useDeleteSnapshot,
-    useUpdateSnapshotsOnDelete, useRollbackSnapshot, useUpdateSnapshotsOnRollback,
+    useGetSnapshots,
+    useUpdateSnapshotsOnAdd,
+    useCreateSnapshot,
+    useDeleteSnapshot,
+    useUpdateSnapshotsOnDelete,
+    useRollbackSnapshot,
+    useUpdateSnapshotsOnRollback,
 } from "./hooks";
 import CreateSnapshotForm from "./CreateSnapshotForm";
 import SnapshotsTable from "./SnapshotsTable/SnapshotsTable";
@@ -42,15 +47,15 @@ export default function Snapshots({ ws }) {
         componentContent = <ErrorMessage />;
     } else {
         componentContent = (
-            <>
+            <div className={formFieldsSize}>
                 <CreateSnapshotForm createSnapshot={createSnapshot} />
-                <h3>{_("Available Snapshots")}</h3>
+                <h2>{_("Available Snapshots")}</h2>
                 <SnapshotsTable
                     snapshots={snapshots}
                     rollbackSnapshot={rollbackSnapshot}
                     deleteSnapshot={deleteSnapshot}
                 />
-            </>
+            </div>
         );
     }
 
@@ -59,7 +64,9 @@ export default function Snapshots({ ws }) {
             <h1>{_("Snapshots")}</h1>
             <p
                 dangerouslySetInnerHTML={{
-                    __html: _("This is an addition to Schnapps command-line utility which can provide more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps'>advanced options</a>."),
+                    __html: _(
+                        "This is an addition to Schnapps command-line utility which can provide more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced options<sup><i class='fas fa-external-link-alt link-outside-icon fa-xs'></i></a>."
+                    ),
                 }}
             />
             {componentContent}

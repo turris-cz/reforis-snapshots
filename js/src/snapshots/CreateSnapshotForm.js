@@ -8,9 +8,7 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
-import {
-    SubmitButton, SUBMIT_BUTTON_STATES, TextInput, useForm, formFieldsSize,
-} from "foris";
+import { SubmitButton, SUBMIT_BUTTON_STATES, TextInput, useForm } from "foris";
 
 CreateSnapshotForm.propTypes = {
     createSnapshot: PropTypes.func.isRequired,
@@ -34,15 +32,17 @@ export default function CreateSnapshotForm({ createSnapshot }) {
     }
 
     return (
-        <div className={formFieldsSize}>
-            <form onSubmit={handleSubmit}>
-                <h3>{_("Create new snapshot")}</h3>
+        <>
+            <form onSubmit={handleSubmit} className="mb-3 mb-md-0">
+                <h2>{_("Create Snapshot")}</h2>
                 <TextInput
                     label={_("Description")}
                     maxLength="50"
                     value={formState.data.description}
                     error={formErrors.description}
-                    onChange={formChangeHandler((value) => ({ description: { $set: value } }))}
+                    onChange={formChangeHandler((value) => ({
+                        description: { $set: value },
+                    }))}
                 />
                 <div className="text-right">
                     <SubmitButton
@@ -51,7 +51,7 @@ export default function CreateSnapshotForm({ createSnapshot }) {
                     />
                 </div>
             </form>
-        </div>
+        </>
     );
 }
 

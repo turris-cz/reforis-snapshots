@@ -26,8 +26,3 @@ p.disappear-on-sm {
         display: none;
     }
 }
-
-.snapshots-table-created-at {
-    text-align: center;
-    min-width: 6rem;
-}
