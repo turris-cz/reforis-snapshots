@@ -7,29 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-31 14:58+0100\n"
+"POT-Creation-Date: 2021-02-02 18:08+0100\n"
 "PO-Revision-Date: 2021-01-08 13:32+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
-"Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/hu/>\n"
 "Language: hu\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/hu/>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:60
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
 msgid "Snapshots"
 msgstr "Pillanatképek"
 
-#: js/src/snapshots/CreateSnapshotForm.js:39
-msgid "Create new snapshot"
+#: js/src/snapshots/CreateSnapshotForm.js:37
+#, fuzzy
+msgid "Create Snapshot"
 msgstr "Új pillanatkép létrehozása"
 
-#: js/src/snapshots/CreateSnapshotForm.js:41
-#: js/src/snapshots/SnapshotsTable.js:36
+#: js/src/snapshots/CreateSnapshotForm.js:39
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
 msgid "Description"
 msgstr "Leírás"
 
@@ -37,43 +37,46 @@ msgstr "Leírás"
 msgid "Description is required."
 msgstr "Leírás szükséges."
 
-#: js/src/snapshots/Snapshots.js:48
+#: js/src/snapshots/Snapshots.js:52
 msgid "Available Snapshots"
 msgstr "Elérhető pillanatképek"
 
-#: js/src/snapshots/Snapshots.js:61
+#: js/src/snapshots/Snapshots.js:67
+#, fuzzy
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
-"can-do-with-schnapps'>advanced options</a>."
+"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced "
+"options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
+"xs'></i></a>."
 msgstr ""
 "Ez a Schnapps parancssori segédprogram kiegészítése, amely több <a "
-"href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-"
-"schnapps'> speciális opciót</a> tud biztosítani."
+"href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-"
+"with-schnapps'> speciális opciót</a> tud biztosítani."
 
-#: js/src/snapshots/SnapshotsTable.js:34
-msgid "Number"
-msgstr "Szám"
-
-#: js/src/snapshots/SnapshotsTable.js:35
-msgid "Type"
-msgstr "Típus"
-
-#: js/src/snapshots/SnapshotsTable.js:37
-msgid "Created at"
-msgstr "Létrehozás ideje"
-
-#: js/src/snapshots/SnapshotsTable.js:38
-msgid "Size"
-msgstr "Méret"
-
-#: js/src/snapshots/SnapshotsTable.js:39 js/src/snapshots/SnapshotsTable.js:76
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
 msgstr "Visszaállít"
 
-#: js/src/snapshots/SnapshotsTable.js:40 js/src/snapshots/SnapshotsTable.js:82
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
 msgid "Delete"
 msgstr "Törlés"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
+msgid "#"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
+msgid "Created at"
+msgstr "Létrehozás ideje"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
+msgid "Size"
+msgstr "Méret"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
+msgid "Actions"
+msgstr ""
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
@@ -86,3 +89,14 @@ msgstr "A pillanatkép nem törölhető."
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
 msgstr "Nem lehet visszaállítani a pillanatképet."
+
+#: reforis_snapshots/__init__.py:71
+msgid "Cannot perfom factory reset."
+msgstr ""
+
+#~ msgid "Number"
+#~ msgstr "Szám"
+
+#~ msgid "Type"
+#~ msgstr "Típus"
+

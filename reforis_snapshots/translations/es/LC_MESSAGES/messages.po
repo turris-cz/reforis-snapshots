@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# Spanish translations for PROJECT.
 # Copyright (C) 2020 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
@@ -7,29 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-31 14:58+0100\n"
+"POT-Creation-Date: 2021-02-02 18:08+0100\n"
 "PO-Revision-Date: 2020-05-30 12:41+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:60
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
 msgid "Snapshots"
 msgstr "Instantáneas"
 
-#: js/src/snapshots/CreateSnapshotForm.js:39
-msgid "Create new snapshot"
+#: js/src/snapshots/CreateSnapshotForm.js:37
+#, fuzzy
+msgid "Create Snapshot"
 msgstr "Crear instantánea"
 
-#: js/src/snapshots/CreateSnapshotForm.js:41
-#: js/src/snapshots/SnapshotsTable.js:36
+#: js/src/snapshots/CreateSnapshotForm.js:39
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
 msgid "Description"
 msgstr "Descripción"
 
@@ -37,43 +37,47 @@ msgstr "Descripción"
 msgid "Description is required."
 msgstr "Se necesita la descripción."
 
-#: js/src/snapshots/Snapshots.js:48
+#: js/src/snapshots/Snapshots.js:52
 msgid "Available Snapshots"
 msgstr "Instantáneas disponibles"
 
-#: js/src/snapshots/Snapshots.js:61
+#: js/src/snapshots/Snapshots.js:67
+#, fuzzy
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
-"can-do-with-schnapps'>advanced options</a>."
+"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced "
+"options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
+"xs'></i></a>."
 msgstr ""
-"Esto es adicional a la utilidad de línea de órdenes Schnapps, la cual puede "
-"proporcionarle <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-"
-"you-can-do-with-schnapps'>opciones más avanzadas</a>."
+"Esto es adicional a la utilidad de línea de órdenes Schnapps, la cual "
+"puede proporcionarle <a "
+"href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-"
+"with-schnapps'>opciones más avanzadas</a>."
 
-#: js/src/snapshots/SnapshotsTable.js:34
-msgid "Number"
-msgstr "Número"
-
-#: js/src/snapshots/SnapshotsTable.js:35
-msgid "Type"
-msgstr "Tipo"
-
-#: js/src/snapshots/SnapshotsTable.js:37
-msgid "Created at"
-msgstr "Creado el"
-
-#: js/src/snapshots/SnapshotsTable.js:38
-msgid "Size"
-msgstr "Tamaño"
-
-#: js/src/snapshots/SnapshotsTable.js:39 js/src/snapshots/SnapshotsTable.js:76
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
 msgstr "Revertir"
 
-#: js/src/snapshots/SnapshotsTable.js:40 js/src/snapshots/SnapshotsTable.js:82
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
 msgid "Delete"
 msgstr "Eliminar"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
+msgid "#"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
+msgid "Created at"
+msgstr "Creado el"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
+msgid "Size"
+msgstr "Tamaño"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
+msgid "Actions"
+msgstr ""
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
@@ -86,3 +90,14 @@ msgstr "No se puede eliminar la instantánea."
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
 msgstr "No se puede revertir a la instantánea."
+
+#: reforis_snapshots/__init__.py:71
+msgid "Cannot perfom factory reset."
+msgstr ""
+
+#~ msgid "Number"
+#~ msgstr "Número"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
