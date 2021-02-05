@@ -6,7 +6,7 @@
     "description": "",
     "main": "./src/app.js",
     "dependencies": {
-        "foris": "^5.1.7",
+        "foris": "^5.1.11",
         "moment": "^2.24.0"
     },
     "peerDependencies": {
