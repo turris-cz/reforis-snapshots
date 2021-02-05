@@ -1,9 +1,13 @@
 {
     "name": "reforis_snapshots",
     "author": "CZ.NIC, z.s.p.o.",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.nic.cz/turris/reforis/reforis-snapshots.git"
+    },
     "license": "GPL-3.0",
     "version": "1.2.0",
-    "description": "",
+    "description": "reForis Snapshots Plugin",
     "main": "./src/app.js",
     "dependencies": {
         "foris": "^5.1.11",
