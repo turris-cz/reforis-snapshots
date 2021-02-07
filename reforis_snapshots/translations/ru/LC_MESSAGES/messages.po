@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2021-02-05 14:25+0000\n"
+"PO-Revision-Date: 2021-02-08 17:50+0000\n"
 "Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/ru/>\n"
@@ -26,9 +26,8 @@ msgid "Snapshots"
 msgstr "Образ"
 
 #: js/src/snapshots/CreateSnapshotForm.js:37
-#, fuzzy
 msgid "Create Snapshot"
-msgstr "Создать новый образ"
+msgstr "Создать образ"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
@@ -44,7 +43,6 @@ msgid "Available Snapshots"
 msgstr "Доступные образы"
 
 #: js/src/snapshots/Snapshots.js:67
-#, fuzzy
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
@@ -53,8 +51,10 @@ msgid ""
 "xs'></i></a>."
 msgstr ""
 "Это дополнение к утилите командной строки Schnapps, которая может "
-"предоставить более <a href='https://docs.turris.cz/geek/schnapps/schnapps"
-"/#what-you-can-do-with-schnapps'>расширенный вариант</a>."
+"предоставить более <a href='https://docs.turris.cz/geek/schnapps/schnapps/"
+"#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>расширенные варианты<sup><i class='fas fa-external-link-alt link-"
+"outside-icon fa-xs'></i></a>."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
