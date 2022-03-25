@@ -1,4 +1,4 @@
-#  Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+#  Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
 #
 #  This is free software, licensed under the GNU General Public License v3.
 #  See /LICENSE for more information.
@@ -36,7 +36,8 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
-    description='',
+    description='reForis Snapshots plugin allows managing system snapshots via Schnapps command-line tool.',
+    url='https://gitlab.nic.cz/turris/reforis/reforis-snapshots',
     author='CZ.NIC, z.s.p.o.',
     author_email='bogdan.bodnar@nic.cz',
 
