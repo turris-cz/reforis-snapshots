@@ -39,7 +39,7 @@ setuptools.setup(
     description='reForis Snapshots plugin allows managing system snapshots via Schnapps command-line tool.',
     url='https://gitlab.nic.cz/turris/reforis/reforis-snapshots',
     author='CZ.NIC, z.s.p.o.',
-    author_email='bogdan.bodnar@nic.cz',
+    author_email='software@turris.com',
 
     install_requires=[
         'flask',
