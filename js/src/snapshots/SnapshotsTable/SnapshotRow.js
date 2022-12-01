@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2023 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -38,7 +38,12 @@ export default function SnapshotRow({
         rollbackSnapshot();
     }
 
+    function handleDonwloadSnapshot() {
+        window.location.href = `/snapshot.tar.gz?num=${snapshot.number}`;
+    }
+
     const buttonsIsDisabled = deletingInProcess || rollbackInProcess;
+
     return (
         <tr>
             <td className="text-center">{snapshot.number}</td>
@@ -53,6 +58,14 @@ export default function SnapshotRow({
                 >
                     <Button
                         className="btn btn-primary"
+                        onClick={handleDonwloadSnapshot}
+                        disabled={buttonsIsDisabled}
+                    >
+                        <i className="fas fa-download" />
+                        <p className="disappear-on-sm">{_("Download")}</p>
+                    </Button>
+                    <Button
+                        className="btn btn-warning"
                         onClick={handleRollbackSnapshots}
                         loading={rollbackInProcess}
                         disabled={buttonsIsDisabled}
