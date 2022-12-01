@@ -6,13 +6,11 @@
  */
 
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 
 import {
     API_STATE,
     Spinner,
     ErrorMessage,
-    formFieldsSize,
     useCustomizationContext,
 } from "foris";
 
@@ -63,15 +61,14 @@ export default function Snapshots({ ws }) {
         componentContent = <ErrorMessage />;
     } else {
         componentContent = (
-            <div className={formFieldsSize}>
+            <>
                 <CreateSnapshotForm createSnapshot={createSnapshot} />
-                <h2>{_("Available Snapshots")}</h2>
                 <SnapshotsTable
                     snapshots={snapshots}
                     rollbackSnapshot={rollbackSnapshot}
                     deleteSnapshot={deleteSnapshot}
                 />
-            </div>
+            </>
         );
     }
 

@@ -6,7 +6,9 @@
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
+import { formFieldsSize } from "foris";
 
 import "./SnapshotsTable.css";
 import SnapshotRow from "./SnapshotRow";
@@ -24,7 +26,8 @@ export default function SnapshotsTable({
     deleteSnapshot,
 }) {
     return (
-        <>
+        <div className={formFieldsSize}>
+            <h2>{_("Available Snapshots")}</h2>
             {snapshots.length === 0 ? (
                 <p className="text-muted text-center">
                     {_("No snapshots found.")}
@@ -62,6 +65,6 @@ export default function SnapshotsTable({
                     </table>
                 </div>
             )}
-        </>
+        </div>
     );
 }
