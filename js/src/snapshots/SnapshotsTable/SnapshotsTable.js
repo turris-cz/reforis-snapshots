@@ -10,7 +10,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { formFieldsSize } from "foris";
 
-import "./SnapshotsTable.css";
 import SnapshotRow from "./SnapshotRow";
 import { snapshotShape } from "./constants";
 
@@ -34,7 +33,7 @@ export default function SnapshotsTable({
                 </p>
             ) : (
                 <div className="table-responsive">
-                    <table className="table table-hover snapshots-table">
+                    <table className="table table-hover mb-0">
                         <thead className="thead-light">
                             <tr>
                                 <th scope="col" className="text-center">

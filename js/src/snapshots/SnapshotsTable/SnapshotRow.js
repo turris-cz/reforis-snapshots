@@ -42,27 +42,33 @@ export default function SnapshotRow({
         window.location.href = `/snapshot.tar.gz?num=${snapshot.number}`;
     }
 
+    const { number, description, size } = snapshot;
     const buttonsIsDisabled = deletingInProcess || rollbackInProcess;
 
     return (
         <tr>
-            <td className="text-center">{snapshot.number}</td>
-            <td>{snapshot.description}</td>
-            <td>{createdAt}</td>
-            <td>{snapshot.size}</td>
-            <td className="text-right">
+            <td className="text-center align-middle">{number}</td>
+            <td className="align-middle">{description}</td>
+            <td className="align-middle">{createdAt}</td>
+            <td className="align-middle">{size}</td>
+            <td className="text-right align-middle">
                 <div
-                    className="btn-group btn-group-sm"
+                    className="btn-group btn-group-sm mb-0"
                     role="group"
-                    aria-label="Actions"
+                    aria-label={_("Actions")}
                 >
                     <Button
                         className="btn btn-primary"
                         onClick={handleDonwloadSnapshot}
                         disabled={buttonsIsDisabled}
                     >
-                        <i className="fas fa-download" />
-                        <p className="disappear-on-sm">{_("Download")}</p>
+                        <span className="d-xl-none">
+                            <i className="fas fa-download" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fas fa-download mr-1" />
+                            {_("Download")}
+                        </span>
                     </Button>
                     <Button
                         className="btn btn-warning"
@@ -70,8 +76,13 @@ export default function SnapshotRow({
                         loading={rollbackInProcess}
                         disabled={buttonsIsDisabled}
                     >
-                        <i className="fa fa-undo" />
-                        <p className="disappear-on-sm">{_("Rollback")}</p>
+                        <span className="d-xl-none">
+                            <i className="fa fa-undo" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fa fa-undo mr-1" />
+                            {_("Rollback")}
+                        </span>
                     </Button>
                     <Button
                         className="btn btn-danger"
@@ -79,8 +90,13 @@ export default function SnapshotRow({
                         loading={deletingInProcess}
                         disabled={buttonsIsDisabled}
                     >
-                        <i className="fa fa-trash-alt" />
-                        <p className="disappear-on-sm">{_("Delete")}</p>
+                        <span className="d-xl-none">
+                            <i className="fa fa-trash-alt" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fa fa-trash-alt mr-1" />
+                            {_("Delete")}
+                        </span>
                     </Button>
                 </div>
             </td>
