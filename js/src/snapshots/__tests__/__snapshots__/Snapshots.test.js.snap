@@ -95,14 +95,22 @@ exports[`<Snapshots /> should render table 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          data-testid="create-snapshot"
           disabled=""
+          label="Create"
           type="submit"
         >
-          Save
+          <span>
+            Save
+          </span>
         </button>
       </div>
     </form>
+  </div>
+  <div
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-4"
+  >
     <h2>
       Available Snapshots
     </h2>
@@ -110,7 +118,7 @@ exports[`<Snapshots /> should render table 1`] = `
       class="table-responsive"
     >
       <table
-        class="table table-hover snapshots-table"
+        class="table table-hover mb-0"
       >
         <thead
           class="thead-light"
@@ -146,104 +154,196 @@ exports[`<Snapshots /> should render table 1`] = `
         <tbody>
           <tr>
             <td
-              class="text-center"
+              class="text-center align-middle"
             >
               1
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               Whatever
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               1/30/2020 10:27 AM
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               808 kB
             </td>
             <td
-              class="text-right"
+              class="text-right align-middle"
             >
               <div
                 aria-label="Actions"
-                class="btn-group btn-group-sm"
+                class="btn-group btn-group-sm mb-0"
                 role="group"
               >
                 <button
-                  class="btn btn btn-primary"
+                  class="btn btn btn-primary d-inline-flex justify-content-center align-items-center"
                   type="button"
                 >
-                  <i
-                    class="fa fa-undo"
-                  />
-                  <p
-                    class="disappear-on-sm"
-                  >
-                    Rollback
-                  </p>
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fas fa-download"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fas fa-download mr-1"
+                      />
+                      Download
+                    </span>
+                  </span>
                 </button>
                 <button
-                  class="btn btn btn-danger"
+                  class="btn btn btn-warning d-inline-flex justify-content-center align-items-center"
                   type="button"
                 >
-                  <i
-                    class="fa fa-trash-alt"
-                  />
-                  <p
-                    class="disappear-on-sm"
-                  >
-                    Delete
-                  </p>
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fa fa-undo"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fa fa-undo mr-1"
+                      />
+                      Rollback
+                    </span>
+                  </span>
+                </button>
+                <button
+                  class="btn btn btn-danger d-inline-flex justify-content-center align-items-center"
+                  type="button"
+                >
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fa fa-trash-alt"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fa fa-trash-alt mr-1"
+                      />
+                      Delete
+                    </span>
+                  </span>
                 </button>
               </div>
             </td>
           </tr>
           <tr>
             <td
-              class="text-center"
+              class="text-center align-middle"
             >
               2
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               Something
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               1/31/2020 10:27 AM
             </td>
-            <td>
+            <td
+              class="align-middle"
+            >
               909 kB
             </td>
             <td
-              class="text-right"
+              class="text-right align-middle"
             >
               <div
                 aria-label="Actions"
-                class="btn-group btn-group-sm"
+                class="btn-group btn-group-sm mb-0"
                 role="group"
               >
                 <button
-                  class="btn btn btn-primary"
+                  class="btn btn btn-primary d-inline-flex justify-content-center align-items-center"
                   type="button"
                 >
-                  <i
-                    class="fa fa-undo"
-                  />
-                  <p
-                    class="disappear-on-sm"
-                  >
-                    Rollback
-                  </p>
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fas fa-download"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fas fa-download mr-1"
+                      />
+                      Download
+                    </span>
+                  </span>
                 </button>
                 <button
-                  class="btn btn btn-danger"
+                  class="btn btn btn-warning d-inline-flex justify-content-center align-items-center"
                   type="button"
                 >
-                  <i
-                    class="fa fa-trash-alt"
-                  />
-                  <p
-                    class="disappear-on-sm"
-                  >
-                    Delete
-                  </p>
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fa fa-undo"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fa fa-undo mr-1"
+                      />
+                      Rollback
+                    </span>
+                  </span>
+                </button>
+                <button
+                  class="btn btn btn-danger d-inline-flex justify-content-center align-items-center"
+                  type="button"
+                >
+                  <span>
+                    <span
+                      class="d-xl-none"
+                    >
+                      <i
+                        class="fa fa-trash-alt"
+                      />
+                    </span>
+                    <span
+                      class="d-none d-xl-flex"
+                    >
+                      <i
+                        class="fa fa-trash-alt mr-1"
+                      />
+                      Delete
+                    </span>
+                  </span>
                 </button>
               </div>
             </td>
