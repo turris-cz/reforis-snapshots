@@ -44,7 +44,8 @@ setuptools.setup(
     install_requires=[
         'flask',
         'Babel',
-        'Flask-Babel',
+        # TODO remove when flask-babel is updated in turris openwrt packages see https://gitlab.nic.cz/turris/reforis/reforis/-/merge_requests/335#note_271161
+        'Flask-Babel==2.0.0',
     ],
     extras_require={
         'devel': [
