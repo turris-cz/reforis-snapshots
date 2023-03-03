@@ -7,7 +7,6 @@
 
 import React, { useEffect } from "react";
 
-import PropTypes from "prop-types";
 import {
     SubmitButton,
     SUBMIT_BUTTON_STATES,
@@ -15,6 +14,7 @@ import {
     useForm,
     formFieldsSize,
 } from "foris";
+import PropTypes from "prop-types";
 
 CreateSnapshotForm.propTypes = {
     createSnapshot: PropTypes.func.isRequired,

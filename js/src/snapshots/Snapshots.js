@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -13,7 +13,9 @@ import {
     ErrorMessage,
     useCustomizationContext,
 } from "foris";
+import PropTypes from "prop-types";
 
+import CreateSnapshotForm from "./CreateSnapshotForm";
 import {
     useGetSnapshots,
     useUpdateSnapshotsOnAdd,
@@ -23,7 +25,6 @@ import {
     useRollbackSnapshot,
     useUpdateSnapshotsOnRollback,
 } from "./hooks";
-import CreateSnapshotForm from "./CreateSnapshotForm";
 import SnapshotsTable from "./SnapshotsTable/SnapshotsTable";
 
 Snapshots.propTypes = {

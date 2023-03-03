@@ -6,8 +6,9 @@
  */
 
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+
 import { Button, toLocaleDateString } from "foris";
+import PropTypes from "prop-types";
 
 import { snapshotShape } from "./constants";
 
@@ -27,20 +28,20 @@ export default function SnapshotRow({
     });
 
     const [deletingInProcess, setDeletingInProcess] = useState(false);
-    function handleDeleteSnapshots() {
+    const handleDeleteSnapshots = () => {
         setDeletingInProcess(true);
         deleteSnapshot();
-    }
+    };
 
     const [rollbackInProcess, setRollbackInProcess] = useState(false);
-    function handleRollbackSnapshots() {
+    const handleRollbackSnapshots = () => {
         setRollbackInProcess(true);
         rollbackSnapshot();
-    }
+    };
 
-    function handleDonwloadSnapshot() {
+    const handleDonwloadSnapshot = () => {
         window.location.href = `/snapshot.tar.gz?num=${snapshot.number}`;
-    }
+    };
 
     const { number, description, size } = snapshot;
     const buttonsIsDisabled = deletingInProcess || rollbackInProcess;
