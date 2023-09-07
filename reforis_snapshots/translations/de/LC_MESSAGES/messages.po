@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2023-08-13 10:48+0000\n"
+"PO-Revision-Date: 2023-09-08 11:52+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
@@ -49,6 +49,11 @@ msgid ""
 "options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
 "xs'></i></a>."
 msgstr ""
+"Dies ist eine Ergänzung zum Schnapps-Befehlszeilenprogramm. Es enthält "
+"jedoch nicht alle <a href='https://docs.turris.cz/geek/schnapps/schnapps/"
+"#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>fortgeschrittene Optionen<sup><i class='fas fa-external-link-alt "
+"link-outside-icon fa-xs'></i></a> von Schnapps."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
@@ -76,19 +81,19 @@ msgstr "Aktionen"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Schnappschuss kann nicht erstellt werden."
 
 #: reforis_snapshots/__init__.py:53
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Schnappschuss kann nicht gelöscht werden."
 
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "Kann nicht auf den Schnappschuss zurückgerollt werden."
 
 #: reforis_snapshots/__init__.py:71
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 
 #~ msgid "Create new snapshot"
 #~ msgstr ""
