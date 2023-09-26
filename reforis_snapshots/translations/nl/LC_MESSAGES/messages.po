@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2020-11-30 22:29+0000\n"
-"Last-Translator: Johan van de Wetering <mail@jvdwetering.nl>\n"
+"PO-Revision-Date: 2022-07-11 13:17+0000\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/nl/>\n"
 "Language: nl\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/reforis-"
-"snapshots-plugin/nl/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
@@ -76,7 +77,7 @@ msgstr "Formaat"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
 msgid "Actions"
-msgstr ""
+msgstr "Acties"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
@@ -99,4 +100,3 @@ msgstr ""
 
 #~ msgid "Type"
 #~ msgstr "Type"
-

@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2020-09-07 07:36+0000\n"
-"Last-Translator: nautilusx <mail.ka@mailbox.org>\n"
+"PO-Revision-Date: 2023-09-08 11:52+0000\n"
+"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
 msgid "Snapshots"
-msgstr ""
+msgstr "Schnappschüsse"
 
 #: js/src/snapshots/CreateSnapshotForm.js:37
-#, fuzzy
 msgid "Create Snapshot"
-msgstr "Erstellt am"
+msgstr "Schnappschuss erstellen"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
@@ -39,7 +39,7 @@ msgstr "Beschreibung ist erforderlich."
 
 #: js/src/snapshots/Snapshots.js:52
 msgid "Available Snapshots"
-msgstr ""
+msgstr "Verfügbare Schnappschüsse"
 
 #: js/src/snapshots/Snapshots.js:67
 msgid ""
@@ -49,10 +49,15 @@ msgid ""
 "options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
 "xs'></i></a>."
 msgstr ""
+"Dies ist eine Ergänzung zum Schnapps-Befehlszeilenprogramm. Es enthält "
+"jedoch nicht alle <a href='https://docs.turris.cz/geek/schnapps/schnapps/"
+"#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>fortgeschrittene Optionen<sup><i class='fas fa-external-link-alt "
+"link-outside-icon fa-xs'></i></a> von Schnapps."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
-msgstr ""
+msgstr "Zurückrollen"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
 msgid "Delete"
@@ -60,7 +65,7 @@ msgstr "Löschen"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
 msgid "Created at"
@@ -72,23 +77,23 @@ msgstr "Größe"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Schnappschuss kann nicht erstellt werden."
 
 #: reforis_snapshots/__init__.py:53
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Schnappschuss kann nicht gelöscht werden."
 
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "Kann nicht auf den Schnappschuss zurückgerollt werden."
 
 #: reforis_snapshots/__init__.py:71
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 
 #~ msgid "Create new snapshot"
 #~ msgstr ""
@@ -107,4 +112,3 @@ msgstr ""
 
 #~ msgid "Type"
 #~ msgstr ""
-

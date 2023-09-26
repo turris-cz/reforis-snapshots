@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2020-03-18 12:36+0000\n"
-"Last-Translator: XoD DarK <xod@xoddark.com>\n"
+"PO-Revision-Date: 2022-01-14 05:52+0000\n"
+"Last-Translator: Gabriel GRONDIN <gglinnk@protonmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.10.1\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
@@ -24,9 +25,8 @@ msgid "Snapshots"
 msgstr "Instantanés"
 
 #: js/src/snapshots/CreateSnapshotForm.js:37
-#, fuzzy
 msgid "Create Snapshot"
-msgstr "Créer un nouvel instantané"
+msgstr "Créer un instantané"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
@@ -42,7 +42,6 @@ msgid "Available Snapshots"
 msgstr "Instantanés disponibles"
 
 #: js/src/snapshots/Snapshots.js:67
-#, fuzzy
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
@@ -50,9 +49,11 @@ msgid ""
 "options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
 "xs'></i></a>."
 msgstr ""
-"Il s'agit d'un ajout à l'utilitaire de ligne de commande Schnapps qui "
-"peut fournir plus <a href='https://docs.turris.cz/geek/schnapps/schnapps"
-"/#what-you-can-do-with-schnapps'>d'options avancées</a>."
+"Il s'agit d'un complément à l'utilitaire de ligne de commande Schnapps qui "
+"peut fournir des <a href='https://docs.turris.cz/geek/schnapps/schnapps/"
+"#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>options plus avancées<sup><i class='fas fa-external-link-alt "
+"link-outside-icon fa-xs'></i></a>."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
@@ -64,7 +65,7 @@ msgstr "Supprimer"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
 msgid "Created at"
@@ -76,7 +77,7 @@ msgstr "Taille"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
@@ -92,11 +93,10 @@ msgstr "Impossible de revenir à l'instantané."
 
 #: reforis_snapshots/__init__.py:71
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Impossible de faire une réinitialisation d'usine."
 
 #~ msgid "Number"
 #~ msgstr "Nombre"
 
 #~ msgid "Type"
 #~ msgstr "Type"
-

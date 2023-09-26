@@ -8,36 +8,38 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 18:08+0100\n"
-"PO-Revision-Date: 2020-01-31 14:58+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-03-17 00:48+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/sk/>\n"
 "Language: sk\n"
-"Language-Team: sk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
 msgid "Snapshots"
-msgstr ""
+msgstr "Body obnovenia (snapshots)"
 
 #: js/src/snapshots/CreateSnapshotForm.js:37
 msgid "Create Snapshot"
-msgstr ""
+msgstr "Vytvoriť bod obnovenia"
 
 #: js/src/snapshots/CreateSnapshotForm.js:39
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: js/src/snapshots/CreateSnapshotForm.js:60
 msgid "Description is required."
-msgstr ""
+msgstr "Popis musí byť vyplnený."
 
 #: js/src/snapshots/Snapshots.js:52
 msgid "Available Snapshots"
-msgstr ""
+msgstr "Dostupné body obnovenia"
 
 #: js/src/snapshots/Snapshots.js:67
 msgid ""
@@ -47,46 +49,51 @@ msgid ""
 "options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
 "xs'></i></a>."
 msgstr ""
+"Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku, ktorý "
+"ponúka viac <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
+"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>pokročilých "
+"možností<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
+"xs'></i></a>."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
 msgid "Rollback"
-msgstr ""
+msgstr "Vrátiť späť"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
 msgid "Delete"
-msgstr ""
+msgstr "Vymazať"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
 msgid "Created at"
-msgstr ""
+msgstr "Vytvorený"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
 msgid "Size"
-msgstr ""
+msgstr "Veľkosť"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
 msgid "Actions"
-msgstr ""
+msgstr "Akcie"
 
 #: reforis_snapshots/__init__.py:44
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Bod obnovenia sa nedá vytvoriť."
 
 #: reforis_snapshots/__init__.py:53
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Bod obnovenia sa nedá vymazať."
 
 #: reforis_snapshots/__init__.py:62
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "K bodu obnovenia sa nedá vrátiť."
 
 #: reforis_snapshots/__init__.py:71
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Reset do továrenského nastavenia sa nedá vykonať."
 
 #~ msgid "Create new snapshot"
 #~ msgstr ""
@@ -105,4 +112,3 @@ msgstr ""
 
 #~ msgid "Type"
 #~ msgstr ""
-
