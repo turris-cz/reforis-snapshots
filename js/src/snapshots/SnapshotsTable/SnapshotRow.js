@@ -1,13 +1,14 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2023 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+
 import { Button, toLocaleDateString } from "foris";
+import PropTypes from "prop-types";
 
 import { snapshotShape } from "./constants";
 
@@ -27,38 +28,62 @@ export default function SnapshotRow({
     });
 
     const [deletingInProcess, setDeletingInProcess] = useState(false);
-    function handleDeleteSnapshots() {
+    const handleDeleteSnapshots = () => {
         setDeletingInProcess(true);
         deleteSnapshot();
-    }
+    };
 
     const [rollbackInProcess, setRollbackInProcess] = useState(false);
-    function handleRollbackSnapshots() {
+    const handleRollbackSnapshots = () => {
         setRollbackInProcess(true);
         rollbackSnapshot();
-    }
+    };
 
+    const handleDonwloadSnapshot = () => {
+        window.location.href = `/snapshot.tar.gz?num=${snapshot.number}`;
+    };
+
+    const { number, description, size } = snapshot;
     const buttonsIsDisabled = deletingInProcess || rollbackInProcess;
+
     return (
         <tr>
-            <td className="text-center">{snapshot.number}</td>
-            <td>{snapshot.description}</td>
-            <td>{createdAt}</td>
-            <td>{snapshot.size}</td>
-            <td className="text-right">
+            <td className="text-center align-middle">{number}</td>
+            <td className="align-middle">{description}</td>
+            <td className="align-middle">{createdAt}</td>
+            <td className="align-middle">{size}</td>
+            <td className="text-right align-middle">
                 <div
-                    className="btn-group btn-group-sm"
+                    className="btn-group btn-group-sm mb-0"
                     role="group"
-                    aria-label="Actions"
+                    aria-label={_("Actions")}
                 >
                     <Button
                         className="btn btn-primary"
+                        onClick={handleDonwloadSnapshot}
+                        disabled={buttonsIsDisabled}
+                    >
+                        <span className="d-xl-none">
+                            <i className="fas fa-download" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fas fa-download mr-1" />
+                            {_("Download")}
+                        </span>
+                    </Button>
+                    <Button
+                        className="btn btn-warning"
                         onClick={handleRollbackSnapshots}
                         loading={rollbackInProcess}
                         disabled={buttonsIsDisabled}
                     >
-                        <i className="fa fa-undo" />
-                        <p className="disappear-on-sm">{_("Rollback")}</p>
+                        <span className="d-xl-none">
+                            <i className="fa fa-undo" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fa fa-undo mr-1" />
+                            {_("Rollback")}
+                        </span>
                     </Button>
                     <Button
                         className="btn btn-danger"
@@ -66,8 +91,13 @@ export default function SnapshotRow({
                         loading={deletingInProcess}
                         disabled={buttonsIsDisabled}
                     >
-                        <i className="fa fa-trash-alt" />
-                        <p className="disappear-on-sm">{_("Delete")}</p>
+                        <span className="d-xl-none">
+                            <i className="fa fa-trash-alt" />
+                        </span>
+                        <span className="d-none d-xl-flex">
+                            <i className="fa fa-trash-alt mr-1" />
+                            {_("Delete")}
+                        </span>
                     </Button>
                 </div>
             </td>

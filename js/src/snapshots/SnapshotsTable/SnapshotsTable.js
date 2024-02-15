@@ -1,16 +1,17 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2023 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
+import { formFieldsSize } from "foris";
 import PropTypes from "prop-types";
 
-import "./SnapshotsTable.css";
-import SnapshotRow from "./SnapshotRow";
 import { snapshotShape } from "./constants";
+import SnapshotRow from "./SnapshotRow";
 
 SnapshotsTable.propTypes = {
     snapshots: PropTypes.arrayOf(snapshotShape).isRequired,
@@ -24,14 +25,15 @@ export default function SnapshotsTable({
     deleteSnapshot,
 }) {
     return (
-        <>
+        <div className={formFieldsSize}>
+            <h2>{_("Available Snapshots")}</h2>
             {snapshots.length === 0 ? (
                 <p className="text-muted text-center">
                     {_("No snapshots found.")}
                 </p>
             ) : (
                 <div className="table-responsive">
-                    <table className="table table-hover snapshots-table">
+                    <table className="table table-hover mb-0">
                         <thead className="thead-light">
                             <tr>
                                 <th scope="col" className="text-center">
@@ -62,6 +64,6 @@ export default function SnapshotsTable({
                     </table>
                 </div>
             )}
-        </>
+        </div>
     );
 }

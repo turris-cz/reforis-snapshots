@@ -1,14 +1,20 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useEffect } from "react";
-import PropTypes from "prop-types";
 
-import { SubmitButton, SUBMIT_BUTTON_STATES, TextInput, useForm } from "foris";
+import {
+    SubmitButton,
+    SUBMIT_BUTTON_STATES,
+    TextInput,
+    useForm,
+    formFieldsSize,
+} from "foris";
+import PropTypes from "prop-types";
 
 CreateSnapshotForm.propTypes = {
     createSnapshot: PropTypes.func.isRequired,
@@ -32,7 +38,7 @@ export default function CreateSnapshotForm({ createSnapshot }) {
     }
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <form onSubmit={handleSubmit} className="mb-3 mb-md-0">
                 <h2>{_("Create Snapshot")}</h2>
                 <TextInput
@@ -46,12 +52,14 @@ export default function CreateSnapshotForm({ createSnapshot }) {
                 />
                 <div className="text-right">
                     <SubmitButton
+                        data-testid="create-snapshot"
+                        label={_("Create")}
                         disabled={Object.keys(formErrors).length > 0}
                         state={SUBMIT_BUTTON_STATES.READY}
                     />
                 </div>
             </form>
-        </>
+        </div>
     );
 }
 
