@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -18,6 +18,7 @@ import {
     getByRole,
     act,
     fireEvent,
+    getByTestId,
 } from "foris/testUtils/customTestRender";
 import { mockJSONError } from "foris/testUtils/network";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
@@ -240,7 +241,7 @@ describe("<Snapshots />", () => {
 
             beforeEach(async () => {
                 descriptionInput = getByLabelText(container, "Description");
-                submitButton = getByText(container, "Save");
+                submitButton = getByTestId(container, "create-snapshot");
             });
 
             it("should send request to create new snapshot", async () => {
