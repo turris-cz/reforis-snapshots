@@ -1,48 +1,49 @@
-# Polish translations for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Polish translations for reForis Snapshots Plugin.
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis Snapshots
+# Plugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 18:08+0100\n"
+"POT-Creation-Date: 2024-03-08 17:34+0100\n"
 "PO-Revision-Date: 2023-08-11 22:49+0000\n"
 "Last-Translator: Piotr Orzechowski <piotr@orzechowski.tech>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/pl/>\n"
 "Language: pl\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/pl/>\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.14.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
 msgid "Snapshots"
 msgstr "Migawki"
 
-#: js/src/snapshots/CreateSnapshotForm.js:37
+#: js/src/snapshots/CreateSnapshotForm.js:43
 msgid "Create Snapshot"
 msgstr "Utwórz migawkę"
 
-#: js/src/snapshots/CreateSnapshotForm.js:39
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
+#: js/src/snapshots/CreateSnapshotForm.js:45
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
 msgid "Description"
 msgstr "Opis"
 
-#: js/src/snapshots/CreateSnapshotForm.js:60
+#: js/src/snapshots/CreateSnapshotForm.js:56
+#, fuzzy
+msgid "Create"
+msgstr "Utworzono w"
+
+#: js/src/snapshots/CreateSnapshotForm.js:68
 msgid "Description is required."
 msgstr "Opis jest wymagany."
 
-#: js/src/snapshots/Snapshots.js:52
-msgid "Available Snapshots"
-msgstr "Dostępne migawki"
-
-#: js/src/snapshots/Snapshots.js:67
+#: js/src/snapshots/Snapshots.js:34
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
@@ -50,49 +51,67 @@ msgid ""
 "options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
 "xs'></i></a>."
 msgstr ""
-"Jest to dodatek do narzędzia wiersza poleceń Schnapps, które może zapewnić "
-"bardziej <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
-"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>zaawansowane "
-"opcje<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
-"xs'></i></a>."
+"Jest to dodatek do narzędzia wiersza poleceń Schnapps, które może "
+"zapewnić bardziej <a href='https://docs.turris.cz/geek/schnapps/schnapps"
+"/#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>zaawansowane opcje<sup><i class='fas fa-external-link-alt "
+"link-outside-icon fa-xs'></i></a>."
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
-msgid "Rollback"
-msgstr "Przywróć"
+#: js/src/snapshots/Snapshots.js:38
+msgid "This is an addition to Schnapps command-line utility."
+msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
-msgid "Delete"
-msgstr "Usunąć"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-msgid "#"
-msgstr "#"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
-msgid "Created at"
-msgstr "Utworzono w"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
-msgid "Size"
-msgstr "Rozmiar"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
 msgid "Actions"
 msgstr "Działania"
 
-#: reforis_snapshots/__init__.py:44
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
+msgid "Download"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
+msgid "Rollback"
+msgstr "Przywróć"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:99
+msgid "Delete"
+msgstr "Usunąć"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:29
+msgid "Available Snapshots"
+msgstr "Dostępne migawki"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
+#, fuzzy
+msgid "No snapshots found."
+msgstr "Migawki"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
+msgid "#"
+msgstr "#"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:43
+msgid "Created at"
+msgstr "Utworzono w"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:44
+msgid "Size"
+msgstr "Rozmiar"
+
+#: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
 msgstr "Nie można utworzyć migawki."
 
-#: reforis_snapshots/__init__.py:53
+#: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
 msgstr "Nie można usunąć migawki."
 
-#: reforis_snapshots/__init__.py:62
+#: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
 msgstr "Nie można przywrócić migawki."
 
-#: reforis_snapshots/__init__.py:71
+#: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
 msgstr "Nie można przywrócić ustawień fabrycznych."
 
@@ -101,3 +120,4 @@ msgstr "Nie można przywrócić ustawień fabrycznych."
 
 #~ msgid "Type"
 #~ msgstr "Rodzaj"
+
