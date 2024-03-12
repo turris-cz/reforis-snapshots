@@ -1,47 +1,48 @@
-# Swedish translations for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Swedish translations for reForis Snapshots Plugin.
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis Snapshots
+# Plugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 18:08+0100\n"
+"POT-Creation-Date: 2024-03-08 17:34+0100\n"
 "PO-Revision-Date: 2022-09-03 03:15+0000\n"
-"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/sv/>\n"
+"Last-Translator: Kristoffer Grundström "
+"<swedishsailfishosuser@tutanota.com>\n"
 "Language: sv\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/sv/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.14.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
 msgid "Snapshots"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:37
+#: js/src/snapshots/CreateSnapshotForm.js:43
 msgid "Create Snapshot"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:39
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
+#: js/src/snapshots/CreateSnapshotForm.js:45
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
 msgid "Description"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:60
+#: js/src/snapshots/CreateSnapshotForm.js:56
+msgid "Create"
+msgstr ""
+
+#: js/src/snapshots/CreateSnapshotForm.js:68
 msgid "Description is required."
 msgstr ""
 
-#: js/src/snapshots/Snapshots.js:52
-msgid "Available Snapshots"
-msgstr ""
-
-#: js/src/snapshots/Snapshots.js:67
+#: js/src/snapshots/Snapshots.js:34
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
@@ -50,43 +51,60 @@ msgid ""
 "xs'></i></a>."
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
-msgid "Rollback"
-msgstr "Tillbakarullning"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
-msgid "Delete"
-msgstr "Ta bort"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-msgid "#"
+#: js/src/snapshots/Snapshots.js:38
+msgid "This is an addition to Schnapps command-line utility."
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
-msgid "Created at"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
-msgid "Size"
-msgstr ""
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
 msgid "Actions"
 msgstr "Åtgärder"
 
-#: reforis_snapshots/__init__.py:44
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
+msgid "Download"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
+msgid "Rollback"
+msgstr "Tillbakarullning"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:99
+msgid "Delete"
+msgstr "Ta bort"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:29
+msgid "Available Snapshots"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
+msgid "No snapshots found."
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
+msgid "#"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:43
+msgid "Created at"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:44
+msgid "Size"
+msgstr ""
+
+#: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
 msgstr ""
 
-#: reforis_snapshots/__init__.py:53
+#: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
 msgstr ""
 
-#: reforis_snapshots/__init__.py:62
+#: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
 msgstr ""
 
-#: reforis_snapshots/__init__.py:71
+#: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
 msgstr ""
 
@@ -107,3 +125,4 @@ msgstr ""
 
 #~ msgid "Type"
 #~ msgstr ""
+

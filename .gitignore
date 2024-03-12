@@ -109,6 +109,6 @@ venv.bak/
 ## mypy
 .mypy_cache/
 
-/reforis_static/reforis_snapshots/js/*.min.js
-/reforis_static/reforis_snapshots/js/*.LICENSE
-/reforis_static/reforis_snapshots/js/*.txt
+reforis_static/reforis_snapshots/js/*.min.js
+reforis_static/reforis_snapshots/js/*.LICENSE
+reforis_static/reforis_snapshots/js/*.txt

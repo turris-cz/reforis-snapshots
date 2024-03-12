@@ -1,47 +1,48 @@
-# German translations for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# German translations for reForis Snapshots Plugin.
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis Snapshots
+# Plugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 18:08+0100\n"
+"POT-Creation-Date: 2024-03-08 17:34+0100\n"
 "PO-Revision-Date: 2023-09-08 11:52+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/de/>\n"
 "Language: de\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.14.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:64
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
 msgid "Snapshots"
 msgstr "Schnappschüsse"
 
-#: js/src/snapshots/CreateSnapshotForm.js:37
+#: js/src/snapshots/CreateSnapshotForm.js:43
 msgid "Create Snapshot"
 msgstr "Schnappschuss erstellen"
 
-#: js/src/snapshots/CreateSnapshotForm.js:39
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:34
+#: js/src/snapshots/CreateSnapshotForm.js:45
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
 msgid "Description"
 msgstr "Beschreibung"
 
-#: js/src/snapshots/CreateSnapshotForm.js:60
+#: js/src/snapshots/CreateSnapshotForm.js:56
+#, fuzzy
+msgid "Create"
+msgstr "Erstellt am"
+
+#: js/src/snapshots/CreateSnapshotForm.js:68
 msgid "Description is required."
 msgstr "Beschreibung ist erforderlich."
 
-#: js/src/snapshots/Snapshots.js:52
-msgid "Available Snapshots"
-msgstr "Verfügbare Schnappschüsse"
-
-#: js/src/snapshots/Snapshots.js:67
+#: js/src/snapshots/Snapshots.js:34
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
@@ -50,48 +51,66 @@ msgid ""
 "xs'></i></a>."
 msgstr ""
 "Dies ist eine Ergänzung zum Schnapps-Befehlszeilenprogramm. Es enthält "
-"jedoch nicht alle <a href='https://docs.turris.cz/geek/schnapps/schnapps/"
-"#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
-"noreferrer'>fortgeschrittene Optionen<sup><i class='fas fa-external-link-alt "
-"link-outside-icon fa-xs'></i></a> von Schnapps."
+"jedoch nicht alle <a href='https://docs.turris.cz/geek/schnapps/schnapps"
+"/#what-you-can-do-with-schnapps' target='_blank' rel='noopener "
+"noreferrer'>fortgeschrittene Optionen<sup><i class='fas fa-external-link-"
+"alt link-outside-icon fa-xs'></i></a> von Schnapps."
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:61
-msgid "Rollback"
-msgstr "Zurückrollen"
+#: js/src/snapshots/Snapshots.js:38
+msgid "This is an addition to Schnapps command-line utility."
+msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:70
-msgid "Delete"
-msgstr "Löschen"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-msgid "#"
-msgstr "#"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:35
-msgid "Created at"
-msgstr "Erstellt am"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:36
-msgid "Size"
-msgstr "Größe"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:37
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
 msgid "Actions"
 msgstr "Aktionen"
 
-#: reforis_snapshots/__init__.py:44
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
+msgid "Download"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
+msgid "Rollback"
+msgstr "Zurückrollen"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:99
+msgid "Delete"
+msgstr "Löschen"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:29
+msgid "Available Snapshots"
+msgstr "Verfügbare Schnappschüsse"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
+#, fuzzy
+msgid "No snapshots found."
+msgstr "Schnappschüsse"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
+msgid "#"
+msgstr "#"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:43
+msgid "Created at"
+msgstr "Erstellt am"
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:44
+msgid "Size"
+msgstr "Größe"
+
+#: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
 msgstr "Schnappschuss kann nicht erstellt werden."
 
-#: reforis_snapshots/__init__.py:53
+#: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
 msgstr "Schnappschuss kann nicht gelöscht werden."
 
-#: reforis_snapshots/__init__.py:62
+#: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
 msgstr "Kann nicht auf den Schnappschuss zurückgerollt werden."
 
-#: reforis_snapshots/__init__.py:71
+#: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
 msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 
@@ -112,3 +131,4 @@ msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 
 #~ msgid "Type"
 #~ msgstr ""
+
