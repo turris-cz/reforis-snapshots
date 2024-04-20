@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-03-08 17:34+0100\n"
-"PO-Revision-Date: 2023-03-17 00:48+0000\n"
+"PO-Revision-Date: 2024-04-21 14:07+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/sk/>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
@@ -34,7 +35,6 @@ msgid "Description"
 msgstr "Popis"
 
 #: js/src/snapshots/CreateSnapshotForm.js:56
-#, fuzzy
 msgid "Create"
 msgstr "Vytvorený"
 
@@ -58,7 +58,7 @@ msgstr ""
 
 #: js/src/snapshots/Snapshots.js:38
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
@@ -67,7 +67,7 @@ msgstr "Akcie"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
 msgid "Download"
-msgstr ""
+msgstr "Stiahnuť"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
 msgid "Rollback"
@@ -82,9 +82,8 @@ msgid "Available Snapshots"
 msgstr "Dostupné body obnovenia"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-#, fuzzy
 msgid "No snapshots found."
-msgstr "Body obnovenia (snapshots)"
+msgstr "Nenašli sa žiadne body obnovenia (snapshots)."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
 msgid "#"
@@ -131,4 +130,3 @@ msgstr "Reset do továrenského nastavenia sa nedá vykonať."
 
 #~ msgid "Type"
 #~ msgstr ""
-
