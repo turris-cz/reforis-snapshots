@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-03-08 17:34+0100\n"
-"PO-Revision-Date: 2021-02-17 14:50+0000\n"
+"PO-Revision-Date: 2024-06-06 16:09+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/cs/>\n"
 "Language: cs\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
-"snapshots-plugin/cs/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.6-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
@@ -34,9 +35,8 @@ msgid "Description"
 msgstr "Popis"
 
 #: js/src/snapshots/CreateSnapshotForm.js:56
-#, fuzzy
 msgid "Create"
-msgstr "Vytvořen"
+msgstr "Vytvořit"
 
 #: js/src/snapshots/CreateSnapshotForm.js:68
 msgid "Description is required."
@@ -57,7 +57,7 @@ msgstr ""
 
 #: js/src/snapshots/Snapshots.js:38
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Toto je doplněk k nástroji Schnapps v příkazové řádce."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
@@ -66,7 +66,7 @@ msgstr "Akce"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
 msgid "Download"
-msgstr ""
+msgstr "Stáhnout"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
 msgid "Rollback"
@@ -81,9 +81,8 @@ msgid "Available Snapshots"
 msgstr "Dostupné snímky"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-#, fuzzy
 msgid "No snapshots found."
-msgstr "Snímky"
+msgstr "Nebyly nalezeny žádné snímky."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
 msgid "#"
@@ -118,4 +117,3 @@ msgstr "Reset do továrního nastavení nelze provést."
 
 #~ msgid "Type"
 #~ msgstr "Typ"
-
