@@ -50,7 +50,7 @@ export default function CreateSnapshotForm({ createSnapshot }) {
                         description: { $set: value },
                     }))}
                 />
-                <div className="text-right">
+                <div className="text-end">
                     <SubmitButton
                         data-testid="create-snapshot"
                         label={_("Create")}
