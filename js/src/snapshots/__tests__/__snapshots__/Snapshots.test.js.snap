@@ -67,9 +67,10 @@ exports[`<Snapshots /> should render table 1`] = `
         Create Snapshot
       </h2>
       <div
-        class="form-group"
+        class="mb-3"
       >
         <label
+          class="form-label"
           for="1"
         >
           Description
@@ -78,7 +79,7 @@ exports[`<Snapshots /> should render table 1`] = `
           class="input-group"
         >
           <input
-            class="form-control  is-invalid"
+            class="form-control is-invalid"
             id="1"
             maxlength="50"
             type="text"
@@ -92,10 +93,10 @@ exports[`<Snapshots /> should render table 1`] = `
         </div>
       </div>
       <div
-        class="text-right"
+        class="text-end"
       >
         <button
-          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           data-testid="create-snapshot"
           disabled=""
           label="Create"
@@ -174,7 +175,7 @@ exports[`<Snapshots /> should render table 1`] = `
               808 kB
             </td>
             <td
-              class="text-right align-middle"
+              class="text-end align-middle"
             >
               <div
                 aria-label="Actions"
@@ -197,7 +198,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fas fa-download mr-1"
+                        class="fas fa-download me-1"
                       />
                       Download
                     </span>
@@ -219,7 +220,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fa fa-undo mr-1"
+                        class="fa fa-undo me-1"
                       />
                       Rollback
                     </span>
@@ -241,7 +242,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fa fa-trash-alt mr-1"
+                        class="fa fa-trash-alt me-1"
                       />
                       Delete
                     </span>
@@ -272,7 +273,7 @@ exports[`<Snapshots /> should render table 1`] = `
               909 kB
             </td>
             <td
-              class="text-right align-middle"
+              class="text-end align-middle"
             >
               <div
                 aria-label="Actions"
@@ -295,7 +296,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fas fa-download mr-1"
+                        class="fas fa-download me-1"
                       />
                       Download
                     </span>
@@ -317,7 +318,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fa fa-undo mr-1"
+                        class="fa fa-undo me-1"
                       />
                       Rollback
                     </span>
@@ -339,7 +340,7 @@ exports[`<Snapshots /> should render table 1`] = `
                       class="d-none d-xl-flex"
                     >
                       <i
-                        class="fa fa-trash-alt mr-1"
+                        class="fa fa-trash-alt me-1"
                       />
                       Delete
                     </span>
