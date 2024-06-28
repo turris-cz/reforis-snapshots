@@ -52,7 +52,7 @@ export default function SnapshotRow({
             <td className="align-middle">{description}</td>
             <td className="align-middle">{createdAt}</td>
             <td className="align-middle">{size}</td>
-            <td className="text-right align-middle">
+            <td className="text-end align-middle">
                 <div
                     className="btn-group btn-group-sm mb-0"
                     role="group"
@@ -67,7 +67,7 @@ export default function SnapshotRow({
                             <i className="fas fa-download" />
                         </span>
                         <span className="d-none d-xl-flex">
-                            <i className="fas fa-download mr-1" />
+                            <i className="fas fa-download me-1" />
                             {_("Download")}
                         </span>
                     </Button>
@@ -81,7 +81,7 @@ export default function SnapshotRow({
                             <i className="fa fa-undo" />
                         </span>
                         <span className="d-none d-xl-flex">
-                            <i className="fa fa-undo mr-1" />
+                            <i className="fa fa-undo me-1" />
                             {_("Rollback")}
                         </span>
                     </Button>
@@ -95,7 +95,7 @@ export default function SnapshotRow({
                             <i className="fa fa-trash-alt" />
                         </span>
                         <span className="d-none d-xl-flex">
-                            <i className="fa fa-trash-alt mr-1" />
+                            <i className="fa fa-trash-alt me-1" />
                             {_("Delete")}
                         </span>
                     </Button>

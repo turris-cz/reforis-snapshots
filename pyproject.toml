@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reforis-snapshots"
-version = "2.0.0"
+version = "2.1.0"
 description = "reForis Snapshots plugin allows managing system snapshots via Schnapps command-line tool."
 readme = "README.md"
 license = "GPL-3.0-or-later"

@@ -8,6 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.1.0] - 2024-06-28
+
+### Changed
+
+-   Updated .gitignore file and excluded Ruff cache folder
+-   Updated Foris JS library to v6.0.2
+-   Updated dependencies in package.json
+
+### Removed
+
+-   Removed redundant .gitkeep files
+
 ## [2.0.0] - 2024-03-12
 
 ### Added
@@ -72,7 +84,8 @@ and this project adheres to
 
 -   Implement main functionality
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.0.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.1.0...master
+[2.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.0.0...v2.1.0
 [2.0.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v1.2.1...v2.0.0
 [1.2.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v1.2.0...v1.2.1
 [1.2.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v1.1.0...v1.2.0
