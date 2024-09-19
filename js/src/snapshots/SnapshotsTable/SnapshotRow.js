@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2023 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -39,7 +39,7 @@ export default function SnapshotRow({
         rollbackSnapshot();
     };
 
-    const handleDonwloadSnapshot = () => {
+    const handleDownloadSnapshot = () => {
         window.location.href = `/snapshot.tar.gz?num=${snapshot.number}`;
     };
 
@@ -60,7 +60,7 @@ export default function SnapshotRow({
                 >
                     <Button
                         className="btn btn-primary"
-                        onClick={handleDonwloadSnapshot}
+                        onClick={handleDownloadSnapshot}
                         disabled={buttonsIsDisabled}
                     >
                         <span className="d-xl-none">
