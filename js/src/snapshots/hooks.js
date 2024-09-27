@@ -15,6 +15,7 @@ import {
     useAPIDelete,
     useAPIPut,
     API_STATE,
+    ALERT_TYPES,
 } from "foris";
 
 import API_URLs from "API";
@@ -54,6 +55,12 @@ export function useCreateSnapshot() {
         `${API_URLs.snapshots}`
     );
     useEffect(() => {
+        if (postSnapshotResponse.state === API_STATE.SUCCESS) {
+            setAlert(
+                _("Snapshot was created successfully."),
+                ALERT_TYPES.SUCCESS
+            );
+        }
         if (postSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(postSnapshotResponse.data);
         }
@@ -69,6 +76,12 @@ export function useDeleteSnapshot() {
         `${API_URLs.snapshots}`
     );
     useEffect(() => {
+        if (deleteSnapshotResponse.state === API_STATE.SUCCESS) {
+            setAlert(
+                _("Snapshot was deleted successfully."),
+                ALERT_TYPES.SUCCESS
+            );
+        }
         if (deleteSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(deleteSnapshotResponse.data);
         }
@@ -111,6 +124,12 @@ export function useRollbackSnapshot() {
         `${API_URLs.snapshots}`
     );
     useEffect(() => {
+        if (putSnapshotResponse.state === API_STATE.SUCCESS) {
+            setAlert(
+                _("Rollback was successful. Please reboot your device."),
+                ALERT_TYPES.SUCCESS
+            );
+        }
         if (putSnapshotResponse.state === API_STATE.ERROR) {
             setAlert(putSnapshotResponse.data);
         }
