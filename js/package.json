@@ -15,7 +15,7 @@
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/react-fontawesome": "^0.2.2",
-        "foris": "^6.0.2",
+        "foris": "^6.4.0",
         "moment": "^2.24.0"
     },
     "peerDependencies": {
