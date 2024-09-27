@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import {
     SubmitButton,
@@ -22,6 +22,7 @@ CreateSnapshotForm.propTypes = {
 
 export default function CreateSnapshotForm({ createSnapshot }) {
     const [formState, formChangeHandler, reloadForm] = useForm(validator);
+    const [errorFeedback, setErrorFeedback] = useState(false);
     const formData = formState.data;
     const formErrors = formState.errors || {};
     useEffect(() => {
@@ -45,10 +46,11 @@ export default function CreateSnapshotForm({ createSnapshot }) {
                     label={_("Description")}
                     maxLength="50"
                     value={formState.data.description}
-                    error={formErrors.description}
+                    error={errorFeedback ? formErrors.description : ""}
                     onChange={formChangeHandler((value) => ({
                         description: { $set: value },
                     }))}
+                    onFocus={() => setErrorFeedback(true)}
                 />
                 <div className="text-end">
                     <SubmitButton
