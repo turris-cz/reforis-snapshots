@@ -7,6 +7,8 @@
 
 import React, { useState } from "react";
 
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     API_STATE,
     Spinner,
@@ -30,10 +32,6 @@ import SnapshotsTable from "./SnapshotsTable/SnapshotsTable";
 Snapshots.propTypes = {
     ws: PropTypes.object.isRequired,
 };
-
-const SNAPSHOTS_INTRO = _(
-    "This is an addition to Schnapps command-line utility which can provide more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced options<sup><i class='fas fa-external-link-alt link-outside-icon fa-xs'></i></a>."
-);
 
 const SNAPSHOTS_INTRO_CUSTOM = _(
     "This is an addition to Schnapps command-line utility."
@@ -79,11 +77,25 @@ export default function Snapshots({ ws }) {
             {isCustomized ? (
                 <p>{SNAPSHOTS_INTRO_CUSTOM}</p>
             ) : (
-                <p
-                    dangerouslySetInnerHTML={{
-                        __html: SNAPSHOTS_INTRO,
-                    }}
-                />
+                <p>
+                    {_(
+                        "This is an addition to Schnapps command-line utility which can provide more "
+                    )}
+                    <a
+                        href="https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-with-schnapps"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {_("advanced options")}
+                        <sup>
+                            <FontAwesomeIcon
+                                icon={faExternalLinkAlt}
+                                className="fa-xs ms-1"
+                            />
+                        </sup>
+                    </a>
+                    .
+                </p>
             )}
             {componentContent}
         </>
