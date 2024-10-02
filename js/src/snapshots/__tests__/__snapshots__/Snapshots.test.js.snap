@@ -15,7 +15,7 @@ exports[`<Snapshots /> should render spinner 1`] = `
       advanced options
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs"
+          class="fa"
         />
       </sup>
     </a>
@@ -51,7 +51,7 @@ exports[`<Snapshots /> should render table 1`] = `
       advanced options
       <sup>
         <i
-          class="fas fa-external-link-alt link-outside-icon fa-xs"
+          class="fa"
         />
       </sup>
     </a>
@@ -79,18 +79,14 @@ exports[`<Snapshots /> should render table 1`] = `
           class="input-group"
         >
           <input
-            class="form-control is-invalid"
+            class="form-control"
             id="1"
             maxlength="50"
             type="text"
             value=""
           />
         </div>
-        <div
-          class="invalid-feedback"
-        >
-          Description is required.
-        </div>
+        
       </div>
       <div
         class="text-end"
@@ -153,7 +149,9 @@ exports[`<Snapshots /> should render table 1`] = `
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr
+            class="text-nowrap"
+          >
             <td
               class="text-center align-middle"
             >
@@ -178,80 +176,63 @@ exports[`<Snapshots /> should render table 1`] = `
               class="text-end align-middle"
             >
               <div
-                aria-label="Actions"
-                class="btn-group btn-group-sm mb-0"
-                role="group"
+                class="dropdown position-static"
               >
                 <button
-                  class="btn btn btn-primary d-inline-flex justify-content-center align-items-center"
+                  aria-expanded="false"
+                  class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
+                  data-bs-toggle="dropdown"
                   type="button"
                 >
                   <span>
-                    <span
-                      class="d-xl-none"
+                    <i
+                      class="fa"
+                    />
+                  </span>
+                </button>
+                <ul
+                  class="dropdown-menu"
+                >
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fas fa-download"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fas fa-download me-1"
+                        class="fa"
                       />
                       Download
-                    </span>
-                  </span>
-                </button>
-                <button
-                  class="btn btn btn-warning d-inline-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  <span>
-                    <span
-                      class="d-xl-none"
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fa fa-undo"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fa fa-undo me-1"
+                        class="fa"
                       />
                       Rollback
-                    </span>
-                  </span>
-                </button>
-                <button
-                  class="btn btn btn-danger d-inline-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  <span>
-                    <span
-                      class="d-xl-none"
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fa fa-trash-alt"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fa fa-trash-alt me-1"
+                        class="fa"
                       />
                       Delete
-                    </span>
-                  </span>
-                </button>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </td>
           </tr>
-          <tr>
+          <tr
+            class="text-nowrap"
+          >
             <td
               class="text-center align-middle"
             >
@@ -276,76 +257,57 @@ exports[`<Snapshots /> should render table 1`] = `
               class="text-end align-middle"
             >
               <div
-                aria-label="Actions"
-                class="btn-group btn-group-sm mb-0"
-                role="group"
+                class="dropdown position-static"
               >
                 <button
-                  class="btn btn btn-primary d-inline-flex justify-content-center align-items-center"
+                  aria-expanded="false"
+                  class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
+                  data-bs-toggle="dropdown"
                   type="button"
                 >
                   <span>
-                    <span
-                      class="d-xl-none"
+                    <i
+                      class="fa"
+                    />
+                  </span>
+                </button>
+                <ul
+                  class="dropdown-menu"
+                >
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fas fa-download"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fas fa-download me-1"
+                        class="fa"
                       />
                       Download
-                    </span>
-                  </span>
-                </button>
-                <button
-                  class="btn btn btn-warning d-inline-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  <span>
-                    <span
-                      class="d-xl-none"
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fa fa-undo"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fa fa-undo me-1"
+                        class="fa"
                       />
                       Rollback
-                    </span>
-                  </span>
-                </button>
-                <button
-                  class="btn btn btn-danger d-inline-flex justify-content-center align-items-center"
-                  type="button"
-                >
-                  <span>
-                    <span
-                      class="d-xl-none"
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
                     >
                       <i
-                        class="fa fa-trash-alt"
-                      />
-                    </span>
-                    <span
-                      class="d-none d-xl-flex"
-                    >
-                      <i
-                        class="fa fa-trash-alt me-1"
+                        class="fa"
                       />
                       Delete
-                    </span>
-                  </span>
-                </button>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </td>
           </tr>
