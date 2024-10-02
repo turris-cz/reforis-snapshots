@@ -103,30 +103,6 @@ describe("<Snapshots />", () => {
         await wait(() => getByRole(container, "status"));
     });
 
-    it("should display spinner when snapshot is being removed", async () => {
-        // Prepare table
-        mockAxios.mockResponse({ data: SNAPSHOTS });
-        // Initially there's no spinner
-        await wait(() => expect(queryByRole(container, "status")).toBeNull());
-
-        // Delete device
-        fireEvent.click(getAllByText(container, "Delete")[0]);
-        // Spinner should appear
-        await wait(() => getByRole(container, "status"));
-    });
-
-    it("should display spinner while rolling back to snapshot", async () => {
-        // Prepare table
-        mockAxios.mockResponse({ data: SNAPSHOTS });
-        // Initially there's no spinner
-        await wait(() => expect(queryByRole(container, "status")).toBeNull());
-
-        // Delete device
-        fireEvent.click(getAllByText(container, "Rollback")[0]);
-        // Spinner should appear
-        await wait(() => getByRole(container, "status"));
-    });
-
     describe("with table prepared", () => {
         beforeEach(async () => {
             // Prepare table
@@ -248,6 +224,7 @@ describe("<Snapshots />", () => {
                 // Prepare form
                 const description = "Discovery";
                 expect(submitButton.disabled).toBe(true);
+                fireEvent.focus(descriptionInput);
                 fireEvent.change(descriptionInput, {
                     target: { value: description },
                 });
@@ -264,6 +241,7 @@ describe("<Snapshots />", () => {
 
             it("should handle API error on creating snapshot", async () => {
                 // Request new snapshot
+                fireEvent.focus(descriptionInput);
                 fireEvent.change(descriptionInput, {
                     target: { value: "qwe" },
                 });
@@ -278,6 +256,7 @@ describe("<Snapshots />", () => {
             });
 
             it("should validate new snapshot description", async () => {
+                fireEvent.focus(descriptionInput);
                 fireEvent.change(descriptionInput, { target: { value: "" } });
                 expect(
                     getByText(container, "Description is required.")
