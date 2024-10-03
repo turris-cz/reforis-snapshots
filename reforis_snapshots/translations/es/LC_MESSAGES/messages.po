@@ -8,71 +8,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-08 17:34+0100\n"
+"POT-Creation-Date: 2024-10-03 15:45+0200\n"
 "PO-Revision-Date: 2024-09-22 12:40+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:76
 msgid "Snapshots"
 msgstr "Instantáneas"
 
-#: js/src/snapshots/CreateSnapshotForm.js:43
+#: js/src/snapshots/CreateSnapshotForm.js:44
 msgid "Create Snapshot"
 msgstr "Crear una instantánea"
 
-#: js/src/snapshots/CreateSnapshotForm.js:45
+#: js/src/snapshots/CreateSnapshotForm.js:46
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
 msgid "Description"
 msgstr "Descripción"
 
-#: js/src/snapshots/CreateSnapshotForm.js:56
+#: js/src/snapshots/CreateSnapshotForm.js:58
 msgid "Create"
 msgstr "Creado"
 
-#: js/src/snapshots/CreateSnapshotForm.js:68
+#: js/src/snapshots/CreateSnapshotForm.js:70
 msgid "Description is required."
 msgstr "Se necesita la descripción."
 
-#: js/src/snapshots/Snapshots.js:34
-msgid ""
-"This is an addition to Schnapps command-line utility which can provide "
-"more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
-"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced "
-"options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
-"xs'></i></a>."
-msgstr ""
-"Esto es un complemento a la utilidad de línea de comandos Schnapps, la "
-"cual puede proporcionar <a "
-"href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-can-do-"
-"with-schnapps'>opciones más avanzadas</a>."
-
-#: js/src/snapshots/Snapshots.js:38
+#: js/src/snapshots/Snapshots.js:36
 msgid "This is an addition to Schnapps command-line utility."
 msgstr "Este es un complemento de la herramienta de línea de comandos Schnapps."
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
-msgid "Actions"
+#: js/src/snapshots/Snapshots.js:81
+#, fuzzy
+msgid ""
+"This is an addition to Schnapps command-line utility which can provide "
+"more "
+msgstr "Este es un complemento de la herramienta de línea de comandos Schnapps."
+
+#: js/src/snapshots/Snapshots.js:89
+#, fuzzy
+msgid "advanced options"
 msgstr "Acciones"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
+#: js/src/snapshots/hooks.js:60
+msgid "Snapshot was created successfully."
+msgstr ""
+
+#: js/src/snapshots/hooks.js:81
+msgid "Snapshot was deleted successfully."
+msgstr ""
+
+#: js/src/snapshots/hooks.js:129
+msgid "Rollback was successful. Please reboot your device."
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:48
 msgid "Download"
 msgstr "Descargar"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:54
 msgid "Rollback"
 msgstr "Revertir"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:99
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:60
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -96,6 +101,10 @@ msgstr "Creado el"
 msgid "Size"
 msgstr "Tamaño"
 
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
+msgid "Actions"
+msgstr "Acciones"
+
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
 msgstr "No se puede crear la instantánea."
@@ -117,3 +126,21 @@ msgstr "No se puede realizar el reseteo de fábrica."
 
 #~ msgid "Type"
 #~ msgstr "Tipo"
+
+#~ msgid ""
+#~ "This is an addition to Schnapps "
+#~ "command-line utility which can provide "
+#~ "more <a "
+#~ "href='https://docs.turris.cz/geek/schnapps/schnapps/#what-"
+#~ "you-can-do-with-schnapps' target='_blank'"
+#~ " rel='noopener noreferrer'>advanced options<sup><i "
+#~ "class='fas fa-external-link-alt link-"
+#~ "outside-icon fa-xs'></i></a>."
+#~ msgstr ""
+#~ "Esto es un complemento a la "
+#~ "utilidad de línea de comandos Schnapps,"
+#~ " la cual puede proporcionar <a "
+#~ "href='https://docs.turris.cz/geek/schnapps/schnapps/#what-"
+#~ "you-can-do-with-schnapps'>opciones más "
+#~ "avanzadas</a>."
+
