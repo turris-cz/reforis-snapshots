@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reforis-snapshots"
-version = "2.1.0"
+version = "2.2.1"
 description = "reForis Snapshots plugin allows managing system snapshots via Schnapps command-line tool."
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -21,43 +21,24 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
 ]
-dependencies = [
-    "Babel",
-    "flask",
-    "Flask-Babel",
-    "reforis",
-]
+dependencies = ["Babel", "flask", "Flask-Babel", "reforis"]
 
 [project.optional-dependencies]
-devel = [
-    "pytest",
-    "ruff",
-    "werkzeug",
-]
+devel = ["pytest", "ruff", "werkzeug"]
 
 [project.entry-points."foris.plugins"]
 reforis_snapshots = "reforis_snapshots:snapshots"
 
 [tool.hatch.build.targets.sdist]
-include = [
-    "/js",
-    "/reforis_snapshots",
-    "/reforis_static",
-]
+include = ["/js", "/reforis_snapshots", "/reforis_static"]
 
 [tool.hatch.build.targets.wheel.hooks.reforis]
 dependencies = ["hatch-reforis"]
 reforis_module = "reforis_snapshots"
 
 [tool.hatch.build.targets.wheel]
-include = [
-    "/reforis_snapshots",
-    "/reforis_static",
-]
-exclude = [
-    "**/*.po",
-    "**/*.pot",
-]
+include = ["/reforis_snapshots", "/reforis_static"]
+exclude = ["**/*.po", "**/*.pot"]
 
 [tool.ruff]
 line-length = 120
