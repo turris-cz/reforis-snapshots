@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-08 17:34+0100\n"
+"POT-Creation-Date: 2024-10-03 15:45+0200\n"
 "PO-Revision-Date: 2020-01-31 14:58+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -18,56 +18,64 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:78
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:76
 msgid "Snapshots"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:43
+#: js/src/snapshots/CreateSnapshotForm.js:44
 msgid "Create Snapshot"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:45
+#: js/src/snapshots/CreateSnapshotForm.js:46
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
 msgid "Description"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:56
+#: js/src/snapshots/CreateSnapshotForm.js:58
 msgid "Create"
 msgstr ""
 
-#: js/src/snapshots/CreateSnapshotForm.js:68
+#: js/src/snapshots/CreateSnapshotForm.js:70
 msgid "Description is required."
 msgstr ""
 
-#: js/src/snapshots/Snapshots.js:34
-msgid ""
-"This is an addition to Schnapps command-line utility which can provide "
-"more <a href='https://docs.turris.cz/geek/schnapps/schnapps/#what-you-"
-"can-do-with-schnapps' target='_blank' rel='noopener noreferrer'>advanced "
-"options<sup><i class='fas fa-external-link-alt link-outside-icon fa-"
-"xs'></i></a>."
-msgstr ""
-
-#: js/src/snapshots/Snapshots.js:38
+#: js/src/snapshots/Snapshots.js:36
 msgid "This is an addition to Schnapps command-line utility."
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:59
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
-msgid "Actions"
+#: js/src/snapshots/Snapshots.js:81
+msgid ""
+"This is an addition to Schnapps command-line utility which can provide "
+"more "
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:71
+#: js/src/snapshots/Snapshots.js:89
+msgid "advanced options"
+msgstr ""
+
+#: js/src/snapshots/hooks.js:60
+msgid "Snapshot was created successfully."
+msgstr ""
+
+#: js/src/snapshots/hooks.js:81
+msgid "Snapshot was deleted successfully."
+msgstr ""
+
+#: js/src/snapshots/hooks.js:129
+msgid "Rollback was successful. Please reboot your device."
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:48
 msgid "Download"
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:85
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:54
 msgid "Rollback"
 msgstr ""
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:99
+#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:60
 msgid "Delete"
 msgstr ""
 
@@ -89,6 +97,10 @@ msgstr ""
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:44
 msgid "Size"
+msgstr ""
+
+#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
+msgid "Actions"
 msgstr ""
 
 #: reforis_snapshots/__init__.py:46
@@ -123,5 +135,16 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is an addition to Schnapps "
+#~ "command-line utility which can provide "
+#~ "more <a "
+#~ "href='https://docs.turris.cz/geek/schnapps/schnapps/#what-"
+#~ "you-can-do-with-schnapps' target='_blank'"
+#~ " rel='noopener noreferrer'>advanced options<sup><i "
+#~ "class='fas fa-external-link-alt link-"
+#~ "outside-icon fa-xs'></i></a>."
 #~ msgstr ""
 
