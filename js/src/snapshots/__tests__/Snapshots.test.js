@@ -19,6 +19,7 @@ import {
     act,
     fireEvent,
     getByTestId,
+    getAllByTestId,
 } from "foris/testUtils/customTestRender";
 import { mockJSONError } from "foris/testUtils/network";
 import { mockSetAlert } from "foris/testUtils/alertContextMock";
@@ -28,18 +29,18 @@ import Snapshots from "../Snapshots";
 
 const SNAPSHOTS = [
     {
-        number: 1,
-        type: "single",
-        description: "Whatever",
-        created: "2020-01-30T10:27:34Z",
-        size: "808 kB",
-    },
-    {
         number: 2,
         type: "rollback",
         description: "Something",
         created: "2020-01-31T10:27:34Z",
         size: "909 kB",
+    },
+    {
+        number: 1,
+        type: "single",
+        description: "Whatever",
+        created: "2020-01-30T10:27:34Z",
+        size: "808 kB",
     },
 ];
 
@@ -135,7 +136,11 @@ describe("<Snapshots />", () => {
         it("should refresh table after snapshot is removed", async () => {
             // Delete snapshot
             const deletedNumber = SNAPSHOTS[0].number;
-            fireEvent.click(getAllByText(container, "Delete")[0]);
+            const threeDotsMenuDeleteButton = getAllByTestId(
+                container,
+                "three-dots-menu-delete"
+            );
+            fireEvent.click(threeDotsMenuDeleteButton[0]);
             expect(mockAxios.delete).toBeCalledWith(
                 `/reforis/snapshots/api/snapshots/${deletedNumber}`,
                 expect.anything()
@@ -159,7 +164,11 @@ describe("<Snapshots />", () => {
 
         it("should handle error on removal", async () => {
             // Delete device
-            fireEvent.click(getAllByText(container, "Delete")[0]);
+            const threeDotsMenuDeleteButton = getAllByTestId(
+                container,
+                "three-dots-menu-delete"
+            );
+            fireEvent.click(threeDotsMenuDeleteButton[0]);
             // Handle error
             const errorMessage = "API didn't handle this well";
             mockJSONError(errorMessage);
