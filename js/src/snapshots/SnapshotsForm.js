@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -16,23 +16,27 @@ import {
 } from "foris";
 import PropTypes from "prop-types";
 
-CreateSnapshotForm.propTypes = {
+SnapshotsForm.propTypes = {
     createSnapshot: PropTypes.func.isRequired,
 };
 
-export default function CreateSnapshotForm({ createSnapshot }) {
-    const [formState, formChangeHandler, reloadForm] = useForm(validator);
+export default function SnapshotsForm({ createSnapshot }) {
     const [errorFeedback, setErrorFeedback] = useState(false);
+    const [formState, formChangeHandler, reloadForm] = useForm(validator);
+
     const formData = formState.data;
     const formErrors = formState.errors || {};
+
     useEffect(() => {
         reloadForm({ description: "" });
     }, [reloadForm]);
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
         createSnapshot({ data: { description: formState.data.description } });
-    }
+        setErrorFeedback(false);
+        reloadForm({ description: "" });
+    };
 
     if (!formData) {
         return null;
