@@ -95,11 +95,10 @@ exports[`<Snapshots /> should render table 1`] = `
           class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           data-testid="create-snapshot"
           disabled=""
-          label="Create"
           type="submit"
         >
           <span>
-            Save
+            Create
           </span>
         </button>
       </div>
@@ -115,68 +114,100 @@ exports[`<Snapshots /> should render table 1`] = `
       class="table-responsive"
     >
       <table
-        class="table table-hover mb-0"
+        class="table table-hover text-nowrap"
       >
         <thead
           class="thead-light"
         >
-          <tr>
+          <tr
+            role="row"
+          >
             <th
-              class="text-center"
-              scope="col"
+              colspan="1"
             >
-              #
+              <button
+                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                title="Sort descending"
+                type="button"
+              >
+                #
+              </button>
             </th>
             <th
-              scope="col"
+              colspan="1"
             >
-              Description
+              <button
+                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                title="Sort ascending"
+                type="button"
+              >
+                Description
+              </button>
             </th>
             <th
-              scope="col"
+              colspan="1"
             >
-              Created at
+              <button
+                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                title="Sort ascending"
+                type="button"
+              >
+                Created at
+              </button>
             </th>
             <th
-              scope="col"
+              colspan="1"
             >
-              Size
+              <button
+                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                title="Sort ascending"
+                type="button"
+              >
+                Size
+              </button>
             </th>
             <th
-              aria-label="Actions"
-              scope="col"
-            />
+              colspan="1"
+            >
+              <div
+                aria-hidden="true"
+                class="d-none"
+              >
+                Actions
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr
-            class="text-nowrap"
+            class="align-middle"
           >
-            <td
-              class="text-center align-middle"
-            >
-              1
+            <td>
+              2
+            </td>
+            <td>
+              Something
+            </td>
+            <td>
+              1/31/2020 10:27 AM
+            </td>
+            <td>
+              909 kB
             </td>
             <td
-              class="align-middle"
-            >
-              Whatever
-            </td>
-            <td
-              class="align-middle"
-            >
-              1/30/2020 10:27 AM
-            </td>
-            <td
-              class="align-middle"
-            >
-              808 kB
-            </td>
-            <td
-              class="text-end align-middle"
+              class="text-end"
             >
               <div
                 class="dropdown position-static"
+                data-testid="three-dots-menu"
               >
                 <button
                   aria-expanded="false"
@@ -196,6 +227,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-download"
                       type="button"
                     >
                       <i
@@ -207,6 +239,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-rollback"
                       type="button"
                     >
                       <i
@@ -218,6 +251,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-delete"
                       type="button"
                     >
                       <i
@@ -231,33 +265,26 @@ exports[`<Snapshots /> should render table 1`] = `
             </td>
           </tr>
           <tr
-            class="text-nowrap"
+            class="align-middle"
           >
-            <td
-              class="text-center align-middle"
-            >
-              2
+            <td>
+              1
+            </td>
+            <td>
+              Whatever
+            </td>
+            <td>
+              1/30/2020 10:27 AM
+            </td>
+            <td>
+              808 kB
             </td>
             <td
-              class="align-middle"
-            >
-              Something
-            </td>
-            <td
-              class="align-middle"
-            >
-              1/31/2020 10:27 AM
-            </td>
-            <td
-              class="align-middle"
-            >
-              909 kB
-            </td>
-            <td
-              class="text-end align-middle"
+              class="text-end"
             >
               <div
                 class="dropdown position-static"
+                data-testid="three-dots-menu"
               >
                 <button
                   aria-expanded="false"
@@ -277,6 +304,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-download"
                       type="button"
                     >
                       <i
@@ -288,6 +316,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-rollback"
                       type="button"
                     >
                       <i
@@ -299,6 +328,7 @@ exports[`<Snapshots /> should render table 1`] = `
                   <li>
                     <button
                       class="dropdown-item"
+                      data-testid="three-dots-menu-delete"
                       type="button"
                     >
                       <i

@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 
 import {
     useAlert,
@@ -29,125 +29,71 @@ export function useGetSnapshots(setSnapshots) {
 
     useEffect(() => {
         if (getSnapshotsResponse.state === API_STATE.SUCCESS) {
-            setSnapshots(getSnapshotsResponse.data);
+            setSnapshots(getSnapshotsResponse.data || []);
         }
     }, [getSnapshotsResponse, setSnapshots]);
 
     return [getSnapshotsResponse.state, getSnapshots];
 }
 
-export function useUpdateSnapshotsOnAdd(ws, getSnapshots) {
-    const [addNotification] = useWSForisModule(ws, "schnapps", "create");
+export function useUpdateSnapshotsOnNotification(ws, action, getSnapshots) {
+    const [notification] = useWSForisModule(ws, "schnapps", action);
+
     useEffect(() => {
-        if (!addNotification) {
+        if (!notification) {
             return;
         }
-        // Unfortunately, foris-controller-schnapps module doesn't provide all info about new
-        // snapshot when it's created. Thus we need to refresh whole list to get a new one.
         getSnapshots();
-    }, [addNotification, getSnapshots]);
+    }, [notification, getSnapshots]);
+}
+
+function useHandleAPIResponse(apiResponse, successMessage) {
+    const [setAlert] = useAlert();
+
+    useEffect(() => {
+        if (apiResponse.state === API_STATE.SUCCESS) {
+            setAlert(successMessage, ALERT_TYPES.SUCCESS);
+        }
+        if (apiResponse.state === API_STATE.ERROR) {
+            setAlert(apiResponse.data);
+        }
+    }, [apiResponse, setAlert, successMessage]);
 }
 
 export function useCreateSnapshot() {
-    const [setAlert] = useAlert();
-
     const [postSnapshotResponse, postSnapshot] = useAPIPost(
         `${API_URLs.snapshots}`
     );
-    useEffect(() => {
-        if (postSnapshotResponse.state === API_STATE.SUCCESS) {
-            setAlert(
-                _("Snapshot was created successfully."),
-                ALERT_TYPES.SUCCESS
-            );
-        }
-        if (postSnapshotResponse.state === API_STATE.ERROR) {
-            setAlert(postSnapshotResponse.data);
-        }
-    }, [postSnapshotResponse, setAlert]);
-
+    useHandleAPIResponse(
+        postSnapshotResponse,
+        _("Snapshot was created successfully.")
+    );
     return [postSnapshotResponse.state, postSnapshot];
 }
 
 export function useDeleteSnapshot() {
-    const [setAlert] = useAlert();
-
     const [deleteSnapshotResponse, deleteSnapshot] = useAPIDelete(
         `${API_URLs.snapshots}`
     );
-    useEffect(() => {
-        if (deleteSnapshotResponse.state === API_STATE.SUCCESS) {
-            setAlert(
-                _("Snapshot was deleted successfully."),
-                ALERT_TYPES.SUCCESS
-            );
-        }
-        if (deleteSnapshotResponse.state === API_STATE.ERROR) {
-            setAlert(deleteSnapshotResponse.data);
-        }
-    }, [deleteSnapshotResponse, setAlert]);
-
+    useHandleAPIResponse(
+        deleteSnapshotResponse,
+        _("Snapshot was deleted successfully.")
+    );
     return [deleteSnapshotResponse.state, deleteSnapshot];
 }
 
-export function useUpdateSnapshotsOnDelete(ws, setSnapshots) {
-    const [deleteNotification] = useWSForisModule(ws, "schnapps", "delete");
-
-    const removeSnapshotFromTable = useCallback(
-        (number) => {
-            setSnapshots((previousDevices) => {
-                const snapshots = [...previousDevices];
-                const deleteIndex = snapshots.findIndex(
-                    (snapshot) => snapshot.number === number
-                );
-                if (deleteIndex !== -1) {
-                    snapshots.splice(deleteIndex, 1);
-                }
-                return snapshots;
-            });
-        },
-        [setSnapshots]
-    );
-
-    useEffect(() => {
-        if (!deleteNotification) {
-            return;
-        }
-        removeSnapshotFromTable(deleteNotification.number);
-    }, [removeSnapshotFromTable, deleteNotification]);
-}
-
 export function useRollbackSnapshot() {
-    const [setAlert] = useAlert();
-
     const [putSnapshotResponse, putSnapshot] = useAPIPut(
         `${API_URLs.snapshots}`
     );
-    useEffect(() => {
-        if (putSnapshotResponse.state === API_STATE.SUCCESS) {
-            setAlert(
-                _("Rollback was successful. Please reboot your device."),
-                ALERT_TYPES.SUCCESS
-            );
-        }
-        if (putSnapshotResponse.state === API_STATE.ERROR) {
-            setAlert(putSnapshotResponse.data);
-        }
-    }, [putSnapshotResponse, setAlert]);
+    useHandleAPIResponse(
+        putSnapshotResponse,
+        _("Rollback was successful. Please reboot your device.")
+    );
 
     function rollbackSnapshot(snapshotNumber) {
         return putSnapshot({ suffix: `${snapshotNumber}/rollback` });
     }
 
     return [putSnapshotResponse.state, rollbackSnapshot];
-}
-
-export function useUpdateSnapshotsOnRollback(ws, getSnapshots) {
-    const [addNotification] = useWSForisModule(ws, "schnapps", "rollback");
-    useEffect(() => {
-        if (!addNotification) {
-            return;
-        }
-        getSnapshots();
-    }, [addNotification, getSnapshots]);
 }
