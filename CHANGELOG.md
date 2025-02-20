@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.3.0] - 2025-02-20
+
+### Added
+
+-   Added & updated Weblate translations
+
+### Changed
+
+-   Updated Foris JS library to v6.6.2
+-   Refactored Snapshots and integrate RichTable component
+
 ## [2.2.1] - 2024-10-03
 
 ### Changed
@@ -105,7 +116,8 @@ and this project adheres to
 
 -   Implement main functionality
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.1...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.0...master
+[2.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.1...v2.3.0
 [2.2.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.0...v2.2.1
 [2.2.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.1.0...v2.2.0
 [2.1.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.0.0...v2.1.0
