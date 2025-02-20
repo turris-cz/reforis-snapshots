@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-10-03 15:45+0200\n"
-"PO-Revision-Date: 2023-09-08 11:52+0000\n"
-"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"PO-Revision-Date: 2024-10-23 02:15+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:76
@@ -34,9 +35,8 @@ msgid "Description"
 msgstr "Beschreibung"
 
 #: js/src/snapshots/CreateSnapshotForm.js:58
-#, fuzzy
 msgid "Create"
-msgstr "Erstellt am"
+msgstr "Erstellen"
 
 #: js/src/snapshots/CreateSnapshotForm.js:70
 msgid "Description is required."
@@ -53,25 +53,24 @@ msgid ""
 msgstr ""
 
 #: js/src/snapshots/Snapshots.js:89
-#, fuzzy
 msgid "advanced options"
-msgstr "Aktionen"
+msgstr "erweiterte Optionen"
 
 #: js/src/snapshots/hooks.js:60
 msgid "Snapshot was created successfully."
-msgstr ""
+msgstr "Schnappschuss wurde erfolgreich erstellt."
 
 #: js/src/snapshots/hooks.js:81
 msgid "Snapshot was deleted successfully."
-msgstr ""
+msgstr "Schnappschuss wurde erfolgreich gelöscht."
 
 #: js/src/snapshots/hooks.js:129
 msgid "Rollback was successful. Please reboot your device."
-msgstr ""
+msgstr "Das Zurückrollen war erfolgreich. Bitte starten Sie Ihr Gerät neu."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:48
 msgid "Download"
-msgstr ""
+msgstr "Herunterladen"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotRow.js:54
 msgid "Rollback"
@@ -86,9 +85,8 @@ msgid "Available Snapshots"
 msgstr "Verfügbare Schnappschüsse"
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-#, fuzzy
 msgid "No snapshots found."
-msgstr "Schnappschüsse"
+msgstr "Keine Schnappschüsse gefunden."
 
 #: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
 msgid "#"
@@ -159,4 +157,3 @@ msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 #~ "Optionen<sup><i class='fas fa-external-"
 #~ "link-alt link-outside-icon fa-"
 #~ "xs'></i></a> von Schnapps."
-
