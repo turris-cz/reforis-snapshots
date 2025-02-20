@@ -1,111 +1,104 @@
 # Slovak translations for reForis Snapshots Plugin.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the reForis Snapshots
 # Plugin project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-03 15:45+0200\n"
+"POT-Creation-Date: 2025-02-20 13:46+0100\n"
 "PO-Revision-Date: 2024-10-30 19:02+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
-"reforis-snapshots-plugin/sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/sk/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8.2-dev\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: js/src/app.js:11 js/src/snapshots/Snapshots.js:76
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
 msgid "Snapshots"
 msgstr "Body obnovenia (snapshots)"
 
-#: js/src/snapshots/CreateSnapshotForm.js:44
-msgid "Create Snapshot"
-msgstr "Vytvoriť bod obnovenia"
-
-#: js/src/snapshots/CreateSnapshotForm.js:46
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:42
-msgid "Description"
-msgstr "Popis"
-
-#: js/src/snapshots/CreateSnapshotForm.js:58
-msgid "Create"
-msgstr "Vytvorený"
-
-#: js/src/snapshots/CreateSnapshotForm.js:70
-msgid "Description is required."
-msgstr "Popis musí byť vyplnený."
-
-#: js/src/snapshots/Snapshots.js:36
+#: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
 msgstr "Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku."
 
-#: js/src/snapshots/Snapshots.js:81
+#: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
-"Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku, ktorý "
-"môže poskytnúť viac "
+"Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku, "
+"ktorý môže poskytnúť viac "
 
-#: js/src/snapshots/Snapshots.js:89
+#: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
 msgstr "pokročilých možností"
 
-#: js/src/snapshots/hooks.js:60
-msgid "Snapshot was created successfully."
-msgstr "Bod obnovenia bol úspešne vytvorený."
+#: js/src/snapshots/SnapshotsForm.js:48
+msgid "Create Snapshot"
+msgstr "Vytvoriť bod obnovenia"
 
-#: js/src/snapshots/hooks.js:81
-msgid "Snapshot was deleted successfully."
-msgstr "Bod obnovenia bol vymazaný."
+#: js/src/snapshots/SnapshotsForm.js:50 js/src/snapshots/SnapshotsTable.js:40
+msgid "Description"
+msgstr "Popis"
 
-#: js/src/snapshots/hooks.js:129
-msgid "Rollback was successful. Please reboot your device."
-msgstr ""
-"Návrat na bod obnovenia bol úspešný. Prosím, reštartujte svoje zariadenie."
+#: js/src/snapshots/SnapshotsForm.js:62
+msgid "Create"
+msgstr "Vytvorený"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:48
-msgid "Download"
-msgstr "Stiahnuť"
+#: js/src/snapshots/SnapshotsForm.js:74
+msgid "Description is required."
+msgstr "Popis musí byť vyplnený."
 
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:54
-msgid "Rollback"
-msgstr "Vrátiť späť"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotRow.js:60
-msgid "Delete"
-msgstr "Vymazať"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:29
-msgid "Available Snapshots"
-msgstr "Dostupné body obnovenia"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:32
-msgid "No snapshots found."
-msgstr "Nenašli sa žiadne body obnovenia (snapshots)."
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:40
-msgid "#"
-msgstr "#"
-
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:43
+#: js/src/snapshots/SnapshotsTable.js:44
 msgid "Created at"
 msgstr "Vytvorený"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:44
+#: js/src/snapshots/SnapshotsTable.js:54
 msgid "Size"
 msgstr "Veľkosť"
 
-#: js/src/snapshots/SnapshotsTable/SnapshotsTable.js:45
+#: js/src/snapshots/SnapshotsTable.js:58
 msgid "Actions"
 msgstr "Akcie"
+
+#: js/src/snapshots/SnapshotsTable.js:80
+msgid "Available Snapshots"
+msgstr "Dostupné body obnovenia"
+
+#: js/src/snapshots/SnapshotsTable.js:83
+msgid "No snapshots found."
+msgstr "Nenašli sa žiadne body obnovenia (snapshots)."
+
+#: js/src/snapshots/SnapshotsTable.js:108
+msgid "Download"
+msgstr "Stiahnuť"
+
+#: js/src/snapshots/SnapshotsTable.js:114
+msgid "Rollback"
+msgstr "Vrátiť späť"
+
+#: js/src/snapshots/SnapshotsTable.js:120
+msgid "Delete"
+msgstr "Vymazať"
+
+#: js/src/snapshots/hooks.js:69
+msgid "Snapshot was created successfully."
+msgstr "Bod obnovenia bol úspešne vytvorený."
+
+#: js/src/snapshots/hooks.js:80
+msgid "Snapshot was deleted successfully."
+msgstr "Bod obnovenia bol vymazaný."
+
+#: js/src/snapshots/hooks.js:91
+msgid "Rollback was successful. Please reboot your device."
+msgstr "Návrat na bod obnovenia bol úspešný. Prosím, reštartujte svoje zariadenie."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
@@ -159,3 +152,7 @@ msgstr "Reset do továrenského nastavenia sa nedá vykonať."
 #~ " rel='noopener noreferrer'>pokročilých možností<sup><i"
 #~ " class='fas fa-external-link-alt "
 #~ "link-outside-icon fa-xs'></i></a>."
+
+#~ msgid "#"
+#~ msgstr "#"
+
