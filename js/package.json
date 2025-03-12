@@ -6,7 +6,7 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-snapshots.git"
     },
     "license": "GPL-3.0",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "reForis Snapshots Plugin",
     "main": "./src/app.js",
     "eslintConfig": {
