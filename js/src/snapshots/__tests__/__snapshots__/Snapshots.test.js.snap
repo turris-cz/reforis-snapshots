@@ -110,239 +110,347 @@ exports[`<Snapshots /> should render table 1`] = `
     <h2>
       Available Snapshots
     </h2>
-    <div
-      class="table-responsive"
-    >
-      <table
-        class="table table-hover text-nowrap"
+    <div>
+      <div
+        class="d-flex justify-content-between align-items-center"
       >
-        <thead
-          class="thead-light"
+        <div
+          class="mb-3"
         >
-          <tr
-            role="row"
+          <div
+            class="input-group"
           >
-            <th
-              colspan="1"
-            >
-              <button
-                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
-                                                    d-flex align-items-center
-                                                "
-                title="Sort descending"
-                type="button"
-              >
-                #
-              </button>
-            </th>
-            <th
-              colspan="1"
-            >
-              <button
-                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
-                                                    d-flex align-items-center
-                                                "
-                title="Sort ascending"
-                type="button"
-              >
-                Description
-              </button>
-            </th>
-            <th
-              colspan="1"
-            >
-              <button
-                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
-                                                    d-flex align-items-center
-                                                "
-                title="Sort ascending"
-                type="button"
-              >
-                Created at
-              </button>
-            </th>
-            <th
-              colspan="1"
-            >
-              <button
-                class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
-                                                    d-flex align-items-center
-                                                "
-                title="Sort ascending"
-                type="button"
-              >
-                Size
-              </button>
-            </th>
-            <th
-              colspan="1"
-            >
-              <div
-                aria-hidden="true"
-                class="d-none"
-              >
-                Actions
-              </div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            class="align-middle"
+            <input
+              class="form-control me-3"
+              id="2"
+              placeholder="Search…"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="dropdown mb-3"
+        >
+          <button
+            class="btn btn btn-outline-secondary dropdown-toggle d-inline-flex justify-content-center align-items-center"
+            data-bs-toggle="dropdown"
+            type="button"
           >
-            <td>
-              2
-            </td>
-            <td>
-              Something
-            </td>
-            <td>
-              1/31/2020 10:27 AM
-            </td>
-            <td>
-              909 kB
-            </td>
-            <td
-              class="text-end"
+            <span>
+              Columns
+            </span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+          >
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center"
+                style="padding-left: 2rem;"
+                type="button"
+              >
+                <i
+                  class="fa"
+                />
+                <span>
+                  #
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center"
+                style="padding-left: 2rem;"
+                type="button"
+              >
+                <i
+                  class="fa"
+                />
+                <span>
+                  Description
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center"
+                style="padding-left: 2rem;"
+                type="button"
+              >
+                <i
+                  class="fa"
+                />
+                <span>
+                  Created at
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center"
+                style="padding-left: 2rem;"
+                type="button"
+              >
+                <i
+                  class="fa"
+                />
+                <span>
+                  Size
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center"
+                style="padding-left: 2rem;"
+                type="button"
+              >
+                <i
+                  class="fa"
+                />
+                <span>
+                  Actions
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="table-responsive"
+      >
+        <table
+          class="table table-hover text-nowrap"
+        >
+          <thead
+            class="table-light"
+          >
+            <tr
+              role="row"
             >
-              <div
-                class="dropdown position-static"
-                data-testid="three-dots-menu"
+              <th
+                colspan="1"
               >
                 <button
-                  aria-expanded="false"
-                  class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
-                  data-bs-toggle="dropdown"
+                  class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                  title="Sort descending"
                   type="button"
                 >
-                  <span>
-                    <i
-                      class="fa"
-                    />
-                  </span>
+                  #
                 </button>
-                <ul
-                  class="dropdown-menu"
-                >
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-download"
-                      type="button"
-                    >
-                      <i
-                        class="fa"
-                      />
-                      Download
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-rollback"
-                      type="button"
-                    >
-                      <i
-                        class="fa"
-                      />
-                      Rollback
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-delete"
-                      type="button"
-                    >
-                      <i
-                        class="fa"
-                      />
-                      Delete
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </td>
-          </tr>
-          <tr
-            class="align-middle"
-          >
-            <td>
-              1
-            </td>
-            <td>
-              Whatever
-            </td>
-            <td>
-              1/30/2020 10:27 AM
-            </td>
-            <td>
-              808 kB
-            </td>
-            <td
-              class="text-end"
-            >
-              <div
-                class="dropdown position-static"
-                data-testid="three-dots-menu"
+              </th>
+              <th
+                colspan="1"
               >
                 <button
-                  aria-expanded="false"
-                  class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
-                  data-bs-toggle="dropdown"
+                  class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                  title="Sort ascending"
                   type="button"
                 >
-                  <span>
-                    <i
-                      class="fa"
-                    />
-                  </span>
+                  Description
                 </button>
-                <ul
-                  class="dropdown-menu"
+              </th>
+              <th
+                colspan="1"
+              >
+                <button
+                  class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                  title="Sort ascending"
+                  type="button"
                 >
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-download"
-                      type="button"
-                    >
+                  Created at
+                </button>
+              </th>
+              <th
+                colspan="1"
+              >
+                <button
+                  class="btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
+                                                    d-flex align-items-center
+                                                "
+                  title="Sort ascending"
+                  type="button"
+                >
+                  Size
+                </button>
+              </th>
+              <th
+                colspan="1"
+              >
+                <div
+                  aria-hidden="true"
+                  class="d-none"
+                >
+                  Actions
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="align-middle"
+            >
+              <td>
+                2
+              </td>
+              <td>
+                Something
+              </td>
+              <td>
+                1/31/2020 10:27 AM
+              </td>
+              <td>
+                909 kB
+              </td>
+              <td
+                class="text-end"
+              >
+                <div
+                  class="dropdown position-static"
+                  data-testid="three-dots-menu"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
+                    data-bs-toggle="dropdown"
+                    type="button"
+                  >
+                    <span>
                       <i
                         class="fa"
                       />
-                      Download
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-rollback"
-                      type="button"
-                    >
+                    </span>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                  >
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-download"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Download
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-rollback"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Rollback
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-delete"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Delete
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="align-middle"
+            >
+              <td>
+                1
+              </td>
+              <td>
+                Whatever
+              </td>
+              <td>
+                1/30/2020 10:27 AM
+              </td>
+              <td>
+                808 kB
+              </td>
+              <td
+                class="text-end"
+              >
+                <div
+                  class="dropdown position-static"
+                  data-testid="three-dots-menu"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="btn btn-sm btn-link text-body d-inline-flex justify-content-center align-items-center"
+                    data-bs-toggle="dropdown"
+                    type="button"
+                  >
+                    <span>
                       <i
                         class="fa"
                       />
-                      Rollback
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      class="dropdown-item"
-                      data-testid="three-dots-menu-delete"
-                      type="button"
-                    >
-                      <i
-                        class="fa"
-                      />
-                      Delete
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                    </span>
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                  >
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-download"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Download
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-rollback"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Rollback
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        data-testid="three-dots-menu-delete"
+                        type="button"
+                      >
+                        <i
+                          class="fa"
+                        />
+                        Delete
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
