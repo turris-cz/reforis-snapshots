@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Snapshots Plugin 2.3.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-02-20 13:46+0100\n"
-"PO-Revision-Date: 2025-03-16 22:34+0000\n"
+"PO-Revision-Date: 2025-03-19 13:25+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/ta/>\n"
@@ -23,25 +23,26 @@ msgstr ""
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
 msgid "Snapshots"
-msgstr ""
+msgstr "ச்னாப்சாட்கள்"
 
 #: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "இது SCHNAPPS கட்டளை-வரி பயன்பாட்டிற்கு கூடுதலாகும்."
 
 #: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
+"இது SCHNAPPS கட்டளை-வரி பயன்பாட்டிற்கு கூடுதலாக உள்ளது, இது மேலும் வழங்க முடியும் "
 
 #: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
-msgstr ""
+msgstr "மேம்பட்ட விருப்பங்கள்"
 
 #: js/src/snapshots/SnapshotsForm.js:48
 msgid "Create Snapshot"
-msgstr ""
+msgstr "ச்னாப்சாட்டை உருவாக்கவும்"
 
 #: js/src/snapshots/SnapshotsForm.js:50 js/src/snapshots/SnapshotsTable.js:40
 msgid "Description"
@@ -49,19 +50,19 @@ msgstr "விவரம்"
 
 #: js/src/snapshots/SnapshotsForm.js:62
 msgid "Create"
-msgstr ""
+msgstr "உருவாக்கு"
 
 #: js/src/snapshots/SnapshotsForm.js:74
 msgid "Description is required."
-msgstr ""
+msgstr "விளக்கம் தேவை."
 
 #: js/src/snapshots/SnapshotsTable.js:44
 msgid "Created at"
-msgstr ""
+msgstr "உருவாக்கப்பட்டது"
 
 #: js/src/snapshots/SnapshotsTable.js:54
 msgid "Size"
-msgstr ""
+msgstr "அளவு"
 
 #: js/src/snapshots/SnapshotsTable.js:58
 msgid "Actions"
@@ -69,11 +70,11 @@ msgstr "செயல்கள்"
 
 #: js/src/snapshots/SnapshotsTable.js:80
 msgid "Available Snapshots"
-msgstr ""
+msgstr "கிடைக்கும் ச்னாப்சாட்கள்"
 
 #: js/src/snapshots/SnapshotsTable.js:83
 msgid "No snapshots found."
-msgstr ""
+msgstr "ச்னாப்சாட்கள் எதுவும் கிடைக்கவில்லை."
 
 #: js/src/snapshots/SnapshotsTable.js:108
 msgid "Download"
@@ -89,28 +90,28 @@ msgstr "நீக்கு"
 
 #: js/src/snapshots/hooks.js:69
 msgid "Snapshot was created successfully."
-msgstr ""
+msgstr "ச்னாப்சாட் வெற்றிகரமாக உருவாக்கப்பட்டது."
 
 #: js/src/snapshots/hooks.js:80
 msgid "Snapshot was deleted successfully."
-msgstr ""
+msgstr "ச்னாப்சாட் வெற்றிகரமாக நீக்கப்பட்டது."
 
 #: js/src/snapshots/hooks.js:91
 msgid "Rollback was successful. Please reboot your device."
-msgstr ""
+msgstr "ரோல்பேக் வெற்றிகரமாக இருந்தது. உங்கள் சாதனத்தை மீண்டும் துவக்கவும்."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "ச்னாப்சாட்டை உருவாக்க முடியாது."
 
 #: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "ச்னாப்சாட்டை நீக்க முடியாது."
 
 #: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "ச்னாப்சாட்டுக்கு திரும்ப முடியாது."
 
 #: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "தொழிற்சாலை மீட்டமைப்பைச் செய்ய முடியாது."
