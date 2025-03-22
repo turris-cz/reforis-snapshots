@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-02-20 13:46+0100\n"
-"PO-Revision-Date: 2024-10-04 20:15+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-03-23 04:01+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
@@ -114,7 +115,7 @@ msgstr "No se puede revertir a la instantánea."
 
 #: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
-msgstr "No se puede realizar el reseteo de fábrica."
+msgstr "No se puede efectuar el restablecimiento de fábrica."
 
 #~ msgid "Number"
 #~ msgstr "Número"
@@ -141,4 +142,3 @@ msgstr "No se puede realizar el reseteo de fábrica."
 
 #~ msgid "#"
 #~ msgstr "#"
-
