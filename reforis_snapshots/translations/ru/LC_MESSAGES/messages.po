@@ -9,16 +9,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-02-20 13:46+0100\n"
-"PO-Revision-Date: 2021-02-08 17:50+0000\n"
-"Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
+"PO-Revision-Date: 2025-04-08 00:40+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/ru/>\n"
 "Language: ru\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
@@ -27,18 +28,19 @@ msgstr "Образ"
 
 #: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Это дополнение к утилите командной строки Schnapps."
 
 #: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
+"Это дополнение к утилите командной строки Schnapps, которая может "
+"предоставить больше "
 
 #: js/src/snapshots/Snapshots.js:83
-#, fuzzy
 msgid "advanced options"
-msgstr "Действия"
+msgstr "расширенных возможностей"
 
 #: js/src/snapshots/SnapshotsForm.js:48
 msgid "Create Snapshot"
@@ -49,9 +51,8 @@ msgid "Description"
 msgstr "Описание"
 
 #: js/src/snapshots/SnapshotsForm.js:62
-#, fuzzy
 msgid "Create"
-msgstr "Создан в"
+msgstr "Создать"
 
 #: js/src/snapshots/SnapshotsForm.js:74
 msgid "Description is required."
@@ -74,13 +75,12 @@ msgid "Available Snapshots"
 msgstr "Доступные образы"
 
 #: js/src/snapshots/SnapshotsTable.js:83
-#, fuzzy
 msgid "No snapshots found."
-msgstr "Образ"
+msgstr "Образы не найдены."
 
 #: js/src/snapshots/SnapshotsTable.js:108
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: js/src/snapshots/SnapshotsTable.js:114
 msgid "Rollback"
@@ -92,15 +92,15 @@ msgstr "Удалить"
 
 #: js/src/snapshots/hooks.js:69
 msgid "Snapshot was created successfully."
-msgstr ""
+msgstr "Образ успешно создан."
 
 #: js/src/snapshots/hooks.js:80
 msgid "Snapshot was deleted successfully."
-msgstr ""
+msgstr "Образ успешно удален."
 
 #: js/src/snapshots/hooks.js:91
 msgid "Rollback was successful. Please reboot your device."
-msgstr ""
+msgstr "Откат прошел успешно. Перезагрузите устройство."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
@@ -145,4 +145,3 @@ msgstr "Не удается выполнить сброс до заводски�
 
 #~ msgid "#"
 #~ msgstr "#"
-
