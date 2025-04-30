@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-02-20 13:46+0100\n"
-"PO-Revision-Date: 2022-09-03 03:15+0000\n"
+"POT-Creation-Date: 2025-04-30 12:51+0200\n"
+"PO-Revision-Date: 2025-03-01 04:01+0000\n"
 "Last-Translator: Kristoffer Grundström "
 "<swedishsailfishosuser@tutanota.com>\n"
 "Language: sv\n"
@@ -23,46 +23,47 @@ msgstr ""
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
 msgid "Snapshots"
-msgstr ""
+msgstr "Ögonblicksbilder"
 
 #: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Det här är ett tillägg till kommandoradsverktyget Schnapp."
 
 #: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
+"Det här är ett tillägg för kommandoradsverktyget Schnapp som kan "
+"tillhandahålla mer "
 
 #: js/src/snapshots/Snapshots.js:83
-#, fuzzy
 msgid "advanced options"
-msgstr "Åtgärder"
+msgstr "avancerade alternativ"
 
 #: js/src/snapshots/SnapshotsForm.js:48
 msgid "Create Snapshot"
-msgstr ""
+msgstr "Skapa ögonblicksbild"
 
 #: js/src/snapshots/SnapshotsForm.js:50 js/src/snapshots/SnapshotsTable.js:40
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: js/src/snapshots/SnapshotsForm.js:62
 msgid "Create"
-msgstr ""
+msgstr "Skapa"
 
 #: js/src/snapshots/SnapshotsForm.js:74
 msgid "Description is required."
-msgstr ""
+msgstr "Beskrivningen behövs."
 
 #: js/src/snapshots/SnapshotsTable.js:44
 msgid "Created at"
-msgstr ""
+msgstr "Skapades den"
 
 #: js/src/snapshots/SnapshotsTable.js:54
 msgid "Size"
-msgstr ""
+msgstr "Storlek"
 
 #: js/src/snapshots/SnapshotsTable.js:58
 msgid "Actions"
@@ -70,15 +71,15 @@ msgstr "Åtgärder"
 
 #: js/src/snapshots/SnapshotsTable.js:80
 msgid "Available Snapshots"
-msgstr ""
+msgstr "Tillgängliga ögonblicksbilder"
 
 #: js/src/snapshots/SnapshotsTable.js:83
 msgid "No snapshots found."
-msgstr ""
+msgstr "Inga ögonblicksbilder hittades."
 
 #: js/src/snapshots/SnapshotsTable.js:108
 msgid "Download"
-msgstr ""
+msgstr "Hämta"
 
 #: js/src/snapshots/SnapshotsTable.js:114
 msgid "Rollback"
@@ -90,31 +91,31 @@ msgstr "Ta bort"
 
 #: js/src/snapshots/hooks.js:69
 msgid "Snapshot was created successfully."
-msgstr ""
+msgstr "Skapandet av ögonblicksbilden lyckades."
 
 #: js/src/snapshots/hooks.js:80
 msgid "Snapshot was deleted successfully."
-msgstr ""
+msgstr "Borttagningen av ögonblicksbilden lyckades."
 
 #: js/src/snapshots/hooks.js:91
 msgid "Rollback was successful. Please reboot your device."
-msgstr ""
+msgstr "Bakåt-rullningen lyckades. Vänligen starta om din enhet."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Ögonblicksbilden kunde inte skapas."
 
 #: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Ögonblicksbilden kunde inte tas bort."
 
 #: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "Kunde inte rulla tillbaka till ögonblicksbilden."
 
 #: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Kunde inte utföra fabriksåterställning."
 
 #~ msgid "Create new snapshot"
 #~ msgstr ""
