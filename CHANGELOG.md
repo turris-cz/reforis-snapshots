@@ -8,6 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.4.0] - 2025-04-30
+
+### Added
+
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated dependencies in package.json
+- Fixed webpack configuration for process/browser.js
+- Re-resolved and re-locked all npm dependencies in package-lock.json
+
 ## [2.3.1] - 2025-03-12
 
 ### Changed
@@ -123,7 +135,8 @@ and this project adheres to
 
 - Implement main functionality
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.1...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.4.0...master
+[2.4.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.1...v2.4.0
 [2.3.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.0...v2.3.1
 [2.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.1...v2.3.0
 [2.2.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.0...v2.2.1
