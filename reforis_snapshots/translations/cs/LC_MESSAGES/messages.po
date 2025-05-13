@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 12:51+0200\n"
-"PO-Revision-Date: 2025-05-13 17:01+0000\n"
+"PO-Revision-Date: 2025-05-14 21:03+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/cs/>\n"
@@ -71,7 +71,7 @@ msgstr "Akce"
 
 #: js/src/snapshots/SnapshotsTable.js:80
 msgid "Available Snapshots"
-msgstr "Dostupné zachycené stavy"
+msgstr "Zachycené stavy k dispozici"
 
 #: js/src/snapshots/SnapshotsTable.js:83
 msgid "No snapshots found."
@@ -105,7 +105,7 @@ msgstr ""
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
-msgstr "Zachycený stav se nedaří vytvořit."
+msgstr "Zachycený stav nebylo možné pořídit."
 
 #: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
@@ -117,7 +117,7 @@ msgstr "Nedaří se vrátit do podoby v zachyceném stavu."
 
 #: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
-msgstr "Reset do výchozího nastavení nelze provést."
+msgstr "Reset do výchozího nastavení nebylo možné provést."
 
 #~ msgid "Number"
 #~ msgstr "Číslo"
