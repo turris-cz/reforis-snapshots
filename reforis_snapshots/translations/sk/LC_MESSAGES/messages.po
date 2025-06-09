@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 12:51+0200\n"
-"PO-Revision-Date: 2024-10-30 19:02+0000\n"
+"PO-Revision-Date: 2025-06-10 22:01+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/sk/>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/sk/>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
@@ -50,7 +51,7 @@ msgstr "Popis"
 
 #: js/src/snapshots/SnapshotsForm.js:62
 msgid "Create"
-msgstr "Vytvorený"
+msgstr "Vytvoriť"
 
 #: js/src/snapshots/SnapshotsForm.js:74
 msgid "Description is required."
@@ -155,4 +156,3 @@ msgstr "Reset do továrenského nastavenia sa nedá vykonať."
 
 #~ msgid "#"
 #~ msgstr "#"
-
