@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-30 12:51+0200\n"
-"PO-Revision-Date: 2024-10-23 02:15+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2025-07-16 22:01+0000\n"
+"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/"
+"reforis-snapshots-plugin/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
@@ -26,13 +27,14 @@ msgstr "Schnappschüsse"
 
 #: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Dies ist eine Ergänzung zum Schnapps-Befehlszeilenwerkzeug."
 
 #: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
+"Dies ist eine Erweiterung für das Schnapps-Befehlszeilenwerkzeug, welches "
 
 #: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
@@ -154,4 +156,3 @@ msgstr "Kann nicht auf Werkseinstellungen zurückgesetzt werden."
 
 #~ msgid "#"
 #~ msgstr "#"
-
