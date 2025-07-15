@@ -33,8 +33,7 @@ msgstr "Dies ist eine Ergänzung zum Schnapps-Befehlszeilenwerkzeug."
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
-msgstr ""
-"Dies ist eine Erweiterung für das Schnapps-Befehlszeilenwerkzeug, welches "
+msgstr "Dies ist eine Erweiterung für das Schnapps-Befehlszeilenwerkzeug für "
 
 #: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
