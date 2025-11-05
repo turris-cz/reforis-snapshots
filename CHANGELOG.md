@@ -8,6 +8,16 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.5.0] - 2025-11-05
+
+### Added
+
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated several dependencies in package.json
+
 ## [2.4.0] - 2025-04-30
 
 ### Added
@@ -135,7 +145,8 @@ and this project adheres to
 
 - Implement main functionality
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.4.0...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.5.0...master
+[2.5.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.4.0...v2.5.0
 [2.4.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.1...v2.4.0
 [2.3.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.0...v2.3.1
 [2.3.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.2.1...v2.3.0
