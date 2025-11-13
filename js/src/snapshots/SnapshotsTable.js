@@ -97,7 +97,7 @@ function renderThreeDotsMenu(rollbackSnapshot, deleteSnapshot, { row }) {
     const { number } = row.original;
 
     const handleDownloadSnapshot = () => {
-        window.location.href = `/snapshot.tar.gz?num=${number}`;
+        window.location.href = `/snapshots/snapshot.tar.gz?num=${number}`;
     };
 
     const threeDotsMenuItems = [
