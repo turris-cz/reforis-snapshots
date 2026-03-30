@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-05 18:17+0300\n"
-"PO-Revision-Date: 2026-03-15 19:09+0000\n"
+"PO-Revision-Date: 2026-03-31 21:09+0000\n"
 "Last-Translator: Fln <weblate.org@fln.lt>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/lt/>\n"
@@ -67,7 +67,7 @@ msgstr "Dydis"
 
 #: js/src/snapshots/SnapshotsTable.js:58
 msgid "Actions"
-msgstr ""
+msgstr "Veiksmai"
 
 #: js/src/snapshots/SnapshotsTable.js:80
 msgid "Available Snapshots"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: js/src/snapshots/SnapshotsTable.js:120
 msgid "Delete"
-msgstr ""
+msgstr "Šalinti"
 
 #: js/src/snapshots/hooks.js:69
 msgid "Snapshot was created successfully."
