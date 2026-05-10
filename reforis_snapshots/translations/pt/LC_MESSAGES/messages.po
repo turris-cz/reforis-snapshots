@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: reForis Snapshots Plugin 2.4.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2025-11-05 18:17+0300\n"
-"PO-Revision-Date: 2026-05-08 09:11+0000\n"
+"PO-Revision-Date: 2026-05-11 00:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "reforis-snapshots-plugin/pt/>\n"
@@ -23,25 +23,27 @@ msgstr ""
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
 msgid "Snapshots"
-msgstr ""
+msgstr "Instantâneos"
 
 #: js/src/snapshots/Snapshots.js:71
 msgid "This is an addition to Schnapps command-line utility."
-msgstr ""
+msgstr "Isto é uma adição ao utilitário de linha de comandos Schnapps."
 
 #: js/src/snapshots/Snapshots.js:75
 msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
+"Isto é uma adição ao utilitário de linha de comandos Schnapps que pode "
+"fornecer mais "
 
 #: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
-msgstr ""
+msgstr "opções avançadas"
 
 #: js/src/snapshots/SnapshotsForm.js:48
 msgid "Create Snapshot"
-msgstr ""
+msgstr "Criar Instantâneo"
 
 #: js/src/snapshots/SnapshotsForm.js:50 js/src/snapshots/SnapshotsTable.js:40
 msgid "Description"
@@ -49,19 +51,19 @@ msgstr "Descrição"
 
 #: js/src/snapshots/SnapshotsForm.js:62
 msgid "Create"
-msgstr ""
+msgstr "Criar"
 
 #: js/src/snapshots/SnapshotsForm.js:74
 msgid "Description is required."
-msgstr ""
+msgstr "Uma descrição é obrigatória."
 
 #: js/src/snapshots/SnapshotsTable.js:44
 msgid "Created at"
-msgstr ""
+msgstr "Criado em"
 
 #: js/src/snapshots/SnapshotsTable.js:54
 msgid "Size"
-msgstr ""
+msgstr "Tamanho"
 
 #: js/src/snapshots/SnapshotsTable.js:58
 msgid "Actions"
@@ -69,15 +71,15 @@ msgstr "Ações"
 
 #: js/src/snapshots/SnapshotsTable.js:80
 msgid "Available Snapshots"
-msgstr ""
+msgstr "Instantâneos Disponíveis"
 
 #: js/src/snapshots/SnapshotsTable.js:83
 msgid "No snapshots found."
-msgstr ""
+msgstr "Nenhuns instantâneos encontrados."
 
 #: js/src/snapshots/SnapshotsTable.js:108
 msgid "Download"
-msgstr "Descarregar"
+msgstr "Descarga"
 
 #: js/src/snapshots/SnapshotsTable.js:114
 msgid "Rollback"
@@ -89,28 +91,28 @@ msgstr "Apagar"
 
 #: js/src/snapshots/hooks.js:69
 msgid "Snapshot was created successfully."
-msgstr ""
+msgstr "Instantâneo foi criado com sucesso."
 
 #: js/src/snapshots/hooks.js:80
 msgid "Snapshot was deleted successfully."
-msgstr ""
+msgstr "Instantâneo foi apagado com sucesso."
 
 #: js/src/snapshots/hooks.js:91
 msgid "Rollback was successful. Please reboot your device."
-msgstr ""
+msgstr "O retrocesso teve sucesso. Por favor reinicie o seu dispositivo."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
-msgstr ""
+msgstr "Não pode criar instantâneo."
 
 #: reforis_snapshots/__init__.py:56
 msgid "Cannot delete snapshot."
-msgstr ""
+msgstr "Não pode apagar instantâneo."
 
 #: reforis_snapshots/__init__.py:66
 msgid "Cannot rollback to snapshot."
-msgstr ""
+msgstr "Não pode retroceder para instantâneo."
 
 #: reforis_snapshots/__init__.py:76
 msgid "Cannot perfom factory reset."
-msgstr ""
+msgstr "Não pode efetuar o reiniciar aos valores de fábrica."
