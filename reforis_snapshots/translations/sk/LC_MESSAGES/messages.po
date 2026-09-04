@@ -9,16 +9,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-05 18:17+0300\n"
-"PO-Revision-Date: 2025-06-10 22:01+0000\n"
+"PO-Revision-Date: 2026-09-04 13:54+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris"
-"/reforis-snapshots-plugin/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/reforis-"
+"snapshots-plugin/sk/>\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
 msgid "Snapshots"
@@ -33,8 +34,8 @@ msgid ""
 "This is an addition to Schnapps command-line utility which can provide "
 "more "
 msgstr ""
-"Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku, "
-"ktorý môže poskytnúť viac "
+"Toto je doplnok k nástroju Schnapps spúšťanému z príkazového riadku, ktorý "
+"môže poskytnúť viac "
 
 #: js/src/snapshots/Snapshots.js:83
 msgid "advanced options"
@@ -98,7 +99,8 @@ msgstr "Bod obnovenia bol vymazaný."
 
 #: js/src/snapshots/hooks.js:91
 msgid "Rollback was successful. Please reboot your device."
-msgstr "Návrat na bod obnovenia bol úspešný. Prosím, reštartujte svoje zariadenie."
+msgstr ""
+"Návrat na bod obnovenia bol úspešný. Prosím, reštartujte svoje zariadenie."
 
 #: reforis_snapshots/__init__.py:46
 msgid "Cannot create snapshot."
@@ -155,4 +157,3 @@ msgstr "Reset do továrenského nastavenia sa nedá vykonať."
 
 #~ msgid "#"
 #~ msgstr "#"
-
