@@ -1,0 +1,118 @@
+# Portuguese translations for reForis Snapshots Plugin.
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the reForis Snapshots
+# Plugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: reForis Snapshots Plugin 2.4.0\n"
+"Report-Msgid-Bugs-To: tech.support@turris.cz\n"
+"POT-Creation-Date: 2026-10-16 14:52+0300\n"
+"PO-Revision-Date: 2026-09-04 13:54+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language: pt\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/turris"
+"/reforis-snapshots-plugin/pt/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: js/src/app.js:11 js/src/snapshots/Snapshots.js:68
+msgid "Snapshots"
+msgstr "Instantâneos"
+
+#: js/src/snapshots/Snapshots.js:71
+msgid "This is an addition to Schnapps command-line utility."
+msgstr "Isto é uma adição ao utilitário de linha de comandos Schnapps."
+
+#: js/src/snapshots/Snapshots.js:75
+msgid ""
+"This is an addition to Schnapps command-line utility which can provide "
+"more "
+msgstr ""
+"Isto é uma adição ao utilitário de linha de comandos Schnapps que pode "
+"fornecer mais "
+
+#: js/src/snapshots/Snapshots.js:83
+msgid "advanced options"
+msgstr "opções avançadas"
+
+#: js/src/snapshots/SnapshotsForm.js:48
+msgid "Create Snapshot"
+msgstr "Criar Instantâneo"
+
+#: js/src/snapshots/SnapshotsForm.js:50 js/src/snapshots/SnapshotsTable.js:40
+msgid "Description"
+msgstr "Descrição"
+
+#: js/src/snapshots/SnapshotsForm.js:62
+msgid "Create"
+msgstr "Criar"
+
+#: js/src/snapshots/SnapshotsForm.js:74
+msgid "Description is required."
+msgstr "Uma descrição é obrigatória."
+
+#: js/src/snapshots/SnapshotsTable.js:44
+msgid "Created at"
+msgstr "Criado em"
+
+#: js/src/snapshots/SnapshotsTable.js:54
+msgid "Size"
+msgstr "Tamanho"
+
+#: js/src/snapshots/SnapshotsTable.js:58
+msgid "Actions"
+msgstr "Ações"
+
+#: js/src/snapshots/SnapshotsTable.js:80
+msgid "Available Snapshots"
+msgstr "Instantâneos Disponíveis"
+
+#: js/src/snapshots/SnapshotsTable.js:83
+msgid "No snapshots found."
+msgstr "Nenhuns instantâneos encontrados."
+
+#: js/src/snapshots/SnapshotsTable.js:108
+msgid "Download"
+msgstr "Descarga"
+
+#: js/src/snapshots/SnapshotsTable.js:114
+msgid "Rollback"
+msgstr "Reverter"
+
+#: js/src/snapshots/SnapshotsTable.js:120
+msgid "Delete"
+msgstr "Apagar"
+
+#: js/src/snapshots/hooks.js:69
+msgid "Snapshot was created successfully."
+msgstr "Instantâneo foi criado com sucesso."
+
+#: js/src/snapshots/hooks.js:80
+msgid "Snapshot was deleted successfully."
+msgstr "Instantâneo foi apagado com sucesso."
+
+#: js/src/snapshots/hooks.js:91
+msgid "Rollback was successful. Please reboot your device."
+msgstr "O retrocesso teve sucesso. Por favor reinicie o seu dispositivo."
+
+#: reforis_snapshots/__init__.py:46
+msgid "Cannot create snapshot."
+msgstr "Não pode criar instantâneo."
+
+#: reforis_snapshots/__init__.py:56
+msgid "Cannot delete snapshot."
+msgstr "Não pode apagar instantâneo."
+
+#: reforis_snapshots/__init__.py:66
+msgid "Cannot rollback to snapshot."
+msgstr "Não pode retroceder para instantâneo."
+
+#: reforis_snapshots/__init__.py:76
+msgid "Cannot perfom factory reset."
+msgstr "Não pode efetuar o reiniciar aos valores de fábrica."
+
