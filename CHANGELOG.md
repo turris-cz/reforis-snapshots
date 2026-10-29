@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [2.5.2] - 2026-10-29
+
+### Added
+
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated several npm dependencies
+- NPM audit fix
+
 ## [2.5.1] - 2025-11-14
 
 ### Changed
@@ -152,7 +163,8 @@ and this project adheres to
 
 - Implement main functionality
 
-[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.5.1...master
+[unreleased]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.5.2...master
+[2.5.2]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.5.1...v2.5.2
 [2.5.1]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.5.0...v2.5.1
 [2.5.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.4.0...v2.5.0
 [2.4.0]: https://gitlab.nic.cz/turris/reforis/reforis-snapshots/-/compare/v2.3.1...v2.4.0
